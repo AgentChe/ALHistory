@@ -1,0 +1,94 @@
+/* 
+  Localizable.strings
+  Soccer
+
+  Created by Андрей Чернышев on 01.02.2023.
+  
+*/
+
+// MARK: General
+"Cancel" = "Cancel";
+"Continue" = "Continue";
+"Next" = "Next";
+"Done" = "Done";
+
+// MARK: TryAgain
+"TryAgain.Title" = "The app failed to perform a request";
+"TryAgain.SubTitle" = "If there’s a connection issue on your side try one more time. If the connection is fine and the error keeps on repeating please get in touch with the support";
+"TryAgain.Button" = "Try again";
+"TryAgain.Contact" = "Contact support";
+
+// MARK: Paygate
+"Paygate.Error.Title" = "Error";
+"Paygate.Error.Text" = "An error occurred during execution. Try later.";
+"Paygate.Error.Button" = "OK";
+"Paygate.Title" = "Upgrade Premium";
+"Paygate.Info1" = "Learn history smarter with AI";
+"Paygate.Info2" = "Scan & solve any history question";
+"Paygate.Info3" = "Track recent inquiries with ease";
+"Paygate.EnableFreeTrial" = "Enable Free Trial";
+"Paygate.FreeTrialEnabled" = "Free Trial Enabled";
+"Paygate.Yearly" = "Yearly";
+"Paygate.Yearly.Bottom" = "%@/year";
+"Paygate.PerWeek" = "per week";
+"Paygate.FreeTrialDays" = "3-day free trial";
+"Paygate.Then" = "%@\n";
+"Paygate.Continue" = "Continue";
+"Paygate.TryFreeSubscribe" = "Try free & subscribe";
+"Paygate.CancelAnytime" = "Cancel Anytime";
+"Paygate.NoPaymentNow" = "No payment now";
+"Paygate.TermsOfUse" = "Terms of Use";
+"Paygate.PrivacyPolicy" = "Privacy Policy";
+"Paygate.RestorePurchases" = "Restore Purchases";
+"Paygate.BestOffer" = "⭐ Best Offer";
+
+// MARK: Splash
+"Splash.Preloader" = "Loading...";
+
+// MARK: Onboarding
+"Onboarding.Welcome1.Button" = "Get started";
+"Onboarding.Welcome2.Title" = "Unleash Your Learning Superpowers";
+"Onboarding.Welcome2.SubTitle" = "Take a photo of your homework or type in your question and get accurate answers in seconds.";
+"Onboarding.Welcome3.Title" = "Revolutionize Your Learning Journey";
+"Onboarding.Welcome3.SubTitle" = "Say goodbye to tedious and time-consuming research and hello to instant answers and explanations.";
+
+// MARK: Main
+"Main.Assistant" = "Text";
+"Main.Account" = "Account";
+
+// MARK: Account
+"Account.Title" = "Account";
+"Account.History" = "Recent";
+"Account.About" = "About";
+"Account.PrivacyPolicy" = "Privacy Policy";
+"Account.TermsOfUse" = "Terms of Use";
+"Account.ContactUs" = "Contact us";
+
+// MARK: History
+"History.Title" = "Recent";
+"History.Empty" = "You have no requests in your history";
+
+// MARK: AssistantImageResize
+"AssistantImageResize.Done" = "Done";
+
+// MARK: AssistantCamera
+"AssistantCamera.PermissionProblem.Title" = "Allow access to camera";
+"AssistantCamera.PermissionProblem.SubTitle" = "This allows you to easily scan or take pictures of your tasks";
+"AssistantCamera.PermissionProblem.Button" = "Allow access";
+
+// MARK: AssistantCameraError
+"AssistantCameraError.Title" = "Couldn’t recognize text in image";
+"AssistantCameraError.SubTitle" = "Please check that the text is aligned and clearly visible";
+"AssistantCameraError.Button" = "Try again";
+
+// MARK: AssistantResult
+"AssistantResult.Helpful" = "Was it helpful?";
+"AssistantResult.Answer" = "Answer";
+"AssistantResult.Explanation" = "Explanation";
+"AssistantResult.Recommendation" = "Recommendation";
+"AssistantResult.Math.UserFormula" = "User Formula";
+"AssistantResult.Copied" = "Copied";
+
+// MARK: AssistantMain
+"AssistantMain.History" = "Recent";
+"AssistantMain.Input.Placeholder" = "Ask a question";
