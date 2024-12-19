@@ -44,7 +44,12 @@ final class MainViewController: UIViewController {
         
         mainView.tabView.recognizerButton
             .rx.tap.bind(to: (Binder(self) { base, void in
-                AssistantAssembly().recognize(from: base)
+                if SessionManager().hasActiveSubscriptions() {
+                    AssistantAssembly().recognize(from: base)
+                } else {
+                    let vc = PaygateViewController.make()
+                    base.present(vc, animated: true)
+                }
             }))
             .disposed(by: disposeBag)
     }

@@ -84,7 +84,7 @@ private extension OnboardingWelcome2View {
         let view = UIView()
         view.layer.cornerRadius = 40.scale
         view.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        view.backgroundColor = Appearance.main600
+        view.backgroundColor = Appearance.main400
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -137,7 +137,7 @@ private extension OnboardingWelcome2View {
         
         let view = UIButton()
         view.setAttributedTitle("Continue".localized.attributed(with: attrs), for: .normal)
-        view.backgroundColor = Appearance.main600
+        view.backgroundColor = Appearance.main400
         view.layer.cornerRadius = 32.scale
         view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         view.translatesAutoresizingMaskIntoConstraints = false

@@ -14,6 +14,7 @@ final class AssistantMainViewModel {
         case recentItem(HistoryAssistantResult)
         case recognizeImage
         case manual(String)
+        case paygate
     }
     
     private lazy var assistantManager = AssistantManager()
@@ -89,11 +90,11 @@ private extension AssistantMainViewModel {
         
         let recognizeImage = didTapCamera
             .asDriver(onErrorDriveWith: .never())
-            .map { Route.recognizeImage }
+            .map { SessionManager().hasActiveSubscriptions() ? Route.recognizeImage : Route.paygate }
         
         let manual = didTapDone
             .asDriver(onErrorDriveWith: .never())
-            .map { Route.manual($0) }
+            .map { SessionManager().hasActiveSubscriptions() ? Route.manual($0) : Route.paygate }
         
         return Driver
             .merge(recent, recentItem, recognizeImage, manual)
