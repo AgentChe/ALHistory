@@ -16,12 +16,6 @@ final class AssistantCameraViewModel {
     enum Action {
         case takePhoto
     }
-    
-    private let initialAssistant: Driver<AssistantsCollectionElement.Assistant?>
-    
-    init(assistant: AssistantsCollectionElement.Assistant?) {
-        initialAssistant = BehaviorRelay(value: assistant).asDriver()
-    }
 }
 
 // MARK: Public
@@ -29,30 +23,22 @@ extension AssistantCameraViewModel {
     struct Input {
         let didTapDismiss: Signal<Void>
         let didTapSelectImageFromLibrary: Signal<Void>
-        let didSelect: Signal<AssistantsCollectionElement.Assistant>
         let didTapTakePhoto: Signal<Void>
         let didTapAllowAccess: Signal<Void>
     }
     
     struct Output {
         let route: Driver<Route>
-        let elements: Driver<[AssistantsCollectionElement]>
-        let writingModeHidden: Driver<Bool>
         let action: Driver<Action>
     }
     
     func configure(input: Input) -> Output {
-        let startAssistant = initialAssistant.map { $0 ?? .math }
-        let currentAssistant = Driver.merge(startAssistant, input.didSelect.asDriver(onErrorDriveWith: .never()))
-        
-        return Output(
+        Output(
             route: makeRoute(
                 didTapDismiss: input.didTapDismiss,
                 didTapSelectImageFromLibrary: input.didTapSelectImageFromLibrary,
                 didTapAllowAccess: input.didTapAllowAccess
             ),
-            elements: makeElements(startAssistant: startAssistant),
-            writingModeHidden: currentAssistant.map { $0 != .writing },
             action: makeAction(didTapTakePhoto: input.didTapTakePhoto)
         )
     }
@@ -79,20 +65,6 @@ private extension AssistantCameraViewModel {
         
         return Driver
             .merge(dismiss, selectImageFromLibrary, requestPermissionInSettings)
-    }
-    
-    func makeElements(startAssistant: Driver<AssistantsCollectionElement.Assistant>) -> Driver<[AssistantsCollectionElement]> {
-        startAssistant
-            .map { startAssistant -> [AssistantsCollectionElement] in
-                [
-                    .init(assistant: .math, style: .onlyWhite, marked: startAssistant == .math),
-                    .init(assistant: .physics, style: .onlyWhite, marked: startAssistant == .physics),
-                    .init(assistant: .biology, style: .onlyWhite, marked: startAssistant == .biology),
-                    .init(assistant: .chemistry, style: .onlyWhite, marked: startAssistant == .chemistry),
-                    .init(assistant: .writing, style: .onlyWhite, marked: startAssistant == .writing),
-                    .init(assistant: .language, style: .onlyWhite, marked: startAssistant == .language)
-                ]
-            }
     }
     
     func makeAction(didTapTakePhoto: Signal<Void>) -> Driver<Action> {

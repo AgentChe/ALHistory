@@ -7,6 +7,6 @@
 
 enum AssistantMainTableElement {
     case input
-    case historyTitle
-    case historyItem(HistoryTableElement)
+    case recentTitle
+    case recentItem(HistoryTableElement)
 }

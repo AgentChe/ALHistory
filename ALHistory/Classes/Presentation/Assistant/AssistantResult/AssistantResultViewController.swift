@@ -23,8 +23,8 @@ final class AssistantResultViewController: UIViewController {
     private lazy var didLikeTrigger = PublishRelay<AssistantResultViewModel.AssistantResult>()
     private lazy var didDislikeTrigger = PublishRelay<AssistantResultViewModel.AssistantResult>()
     
-    private init(historyItem: AssistantHistoryItem, didTapClose: @escaping () -> Void) {
-        self.viewModel = AssistantResultViewModel(historyItem: historyItem)
+    private init(recentItem: HistoryAssistantResult, didTapClose: @escaping () -> Void) {
+        self.viewModel = AssistantResultViewModel(recentItem: recentItem)
         self.didTapClose = didTapClose
         
         super.init(nibName: nil, bundle: nil)
@@ -37,7 +37,7 @@ final class AssistantResultViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    private init(manual: AssistantMainViewController.DataForManualAnalyze, didTapClose: @escaping () -> Void) {
+    private init(manual: String, didTapClose: @escaping () -> Void) {
         self.viewModel = AssistantResultViewModel(manual: manual)
         self.didTapClose = didTapClose
         
@@ -117,13 +117,13 @@ extension AssistantResultViewController {
         return vc
     }
     
-    static func make(historyItem: AssistantHistoryItem, didTapClose: @escaping () -> Void) -> AssistantResultViewController {
-        let vc = AssistantResultViewController(historyItem: historyItem, didTapClose: didTapClose)
+    static func make(recentItem: HistoryAssistantResult, didTapClose: @escaping () -> Void) -> AssistantResultViewController {
+        let vc = AssistantResultViewController(recentItem: recentItem, didTapClose: didTapClose)
         vc.navigationItem.backButtonTitle = " "
         return vc
     }
     
-    static func make(manual: AssistantMainViewController.DataForManualAnalyze, didTapClose: @escaping () -> Void) -> AssistantResultViewController {
+    static func make(manual: String, didTapClose: @escaping () -> Void) -> AssistantResultViewController {
         let vc = AssistantResultViewController(manual: manual, didTapClose: didTapClose)
         vc.navigationItem.backButtonTitle = " "
         return vc

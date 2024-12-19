@@ -8,17 +8,12 @@
 import Alamofire
 
 struct AssistantAnalyzeManualRequest: APIRequestBody {
-    enum AssistantType {
-        case math, physics, biology, chemistry
-    }
-    
     let anonymousId: String
     let internalId: String
-    let assistantType: AssistantType
     let text: String
     
     var url: String {
-        GlobalDefinitions.domain + "/api/v1/assistant/\(assistantType.extensionPath)/process"
+        GlobalDefinitions.domain + "/api/v1/assistant/history/process"
     }
     
     var method: HTTPMethod {
@@ -37,21 +32,5 @@ struct AssistantAnalyzeManualRequest: APIRequestBody {
             "internal_id": internalId,
             "text": text
         ]
-    }
-}
-
-// MARK: Additional
-private extension AssistantAnalyzeManualRequest.AssistantType {
-    var extensionPath: String {
-        switch self {
-        case .math:
-            return "math"
-        case .physics:
-            return "physics"
-        case .biology:
-            return "biology"
-        case .chemistry:
-            return "chemistry"
-        }
     }
 }

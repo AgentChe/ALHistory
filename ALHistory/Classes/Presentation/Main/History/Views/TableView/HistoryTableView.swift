@@ -13,7 +13,7 @@ final class HistoryTableView: UITableView {
     lazy var elements = [HistoryTableElement]()
     
     private lazy var didScrollToBottomTrigger = PublishRelay<Void>()
-    private lazy var didSelectTrigger = PublishRelay<AssistantHistoryItem>()
+    private lazy var didSelectTrigger = PublishRelay<HistoryAssistantResult>()
     
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -50,7 +50,7 @@ extension HistoryTableView {
         didScrollToBottomTrigger.asSignal()
     }
     
-    var didSelect: Signal<AssistantHistoryItem> {
+    var didSelect: Signal<HistoryAssistantResult> {
         didSelectTrigger.asSignal()
     }
 }

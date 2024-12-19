@@ -17,9 +17,7 @@
 		DE8B12322D14120600A65F23 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B113B2D14120600A65F23 /* GradientView.swift */; };
 		DE8B12332D14120600A65F23 /* HistoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11A02D14120600A65F23 /* HistoryTableView.swift */; };
 		DE8B12342D14120600A65F23 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11302D14120600A65F23 /* BranchManager.swift */; };
-		DE8B12352D14120600A65F23 /* AssistantsCollectionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11B42D14120600A65F23 /* AssistantsCollectionElement.swift */; };
 		DE8B12362D14120600A65F23 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11982D14120600A65F23 /* AccountView.swift */; };
-		DE8B12372D14120600A65F23 /* AMInputBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11672D14120600A65F23 /* AMInputBottomView.swift */; };
 		DE8B12382D14120600A65F23 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11472D14120600A65F23 /* UIEdgeInsets+Extension.swift */; };
 		DE8B12392D14120600A65F23 /* RestAPITransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B114E2D14120600A65F23 /* RestAPITransport.swift */; };
 		DE8B123A2D14120600A65F23 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B113C2D14120600A65F23 /* PaddingLabel.swift */; };
@@ -29,14 +27,11 @@
 		DE8B123E2D14120600A65F23 /* PaygateInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11E92D14120600A65F23 /* PaygateInfoView.swift */; };
 		DE8B123F2D14120600A65F23 /* AssistantHelpfulRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12102D14120600A65F23 /* AssistantHelpfulRequest.swift */; };
 		DE8B12402D14120600A65F23 /* AssistantMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11742D14120600A65F23 /* AssistantMainViewModel.swift */; };
-		DE8B12412D14120600A65F23 /* MathAssistantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12022D14120600A65F23 /* MathAssistantResult.swift */; };
-		DE8B12422D14120600A65F23 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12012D14120600A65F23 /* Language.swift */; };
 		DE8B12432D14120600A65F23 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11F42D14120600A65F23 /* SplashViewController.swift */; };
 		DE8B12442D14120600A65F23 /* PaygateBestOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11E62D14120600A65F23 /* PaygateBestOfferView.swift */; };
 		DE8B12452D14120600A65F23 /* ACEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11BE2D14120600A65F23 /* ACEView.swift */; };
 		DE8B12462D14120600A65F23 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11432D14120600A65F23 /* String+Extension.swift */; };
 		DE8B12472D14120600A65F23 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11F52D14120600A65F23 /* SplashViewModel.swift */; };
-		DE8B12482D14120600A65F23 /* KatexWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11762D14120600A65F23 /* KatexWebView.swift */; };
 		DE8B12492D14120600A65F23 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B121B2D14120600A65F23 /* ProfileManager.swift */; };
 		DE8B124A2D14120600A65F23 /* APIRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B114D2D14120600A65F23 /* APIRequestBody.swift */; };
 		DE8B124B2D14120600A65F23 /* PaygateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11EE2D14120600A65F23 /* PaygateViewModel.swift */; };
@@ -45,34 +40,25 @@
 		DE8B124E2D14120600A65F23 /* TryAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11F82D14120600A65F23 /* TryAgainView.swift */; };
 		DE8B124F2D14120600A65F23 /* AMTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11692D14120600A65F23 /* AMTextView.swift */; };
 		DE8B12502D14120600A65F23 /* NumberLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B115A2D14120600A65F23 /* NumberLaunches.swift */; };
-		DE8B12512D14120600A65F23 /* SWMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11D22D14120600A65F23 /* SWMView.swift */; };
 		DE8B12522D14120600A65F23 /* AssistantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12162D14120600A65F23 /* AssistantManager.swift */; };
-		DE8B12532D14120600A65F23 /* AssistantAnalyzeWritingProcessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B120F2D14120600A65F23 /* AssistantAnalyzeWritingProcessRequest.swift */; };
 		DE8B12542D14120600A65F23 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11E02D14120600A65F23 /* OnboardingViewController.swift */; };
 		DE8B12552D14120600A65F23 /* ProfileCreateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12192D14120600A65F23 /* ProfileCreateRequest.swift */; };
 		DE8B12562D14120600A65F23 /* ContentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11552D14120600A65F23 /* ContentError.swift */; };
-		DE8B12572D14120600A65F23 /* AssistantHistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11FE2D14120600A65F23 /* AssistantHistoryPage.swift */; };
+		DE8B12572D14120600A65F23 /* AssistantRecentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11FE2D14120600A65F23 /* AssistantRecentPage.swift */; };
 		DE8B12582D14120600A65F23 /* OnboardingSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11DA2D14120600A65F23 /* OnboardingSlideView.swift */; };
 		DE8B12592D14120600A65F23 /* AccountTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11952D14120600A65F23 /* AccountTableView.swift */; };
-		DE8B125A2D14120600A65F23 /* AssistantCameraWritingModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11B82D14120600A65F23 /* AssistantCameraWritingModeView.swift */; };
 		DE8B125B2D14120600A65F23 /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B115E2D14120600A65F23 /* TextAttributes.swift */; };
 		DE8B125C2D14120600A65F23 /* PaygateProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11EA2D14120600A65F23 /* PaygateProductButton.swift */; };
 		DE8B125D2D14120600A65F23 /* XOREncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11602D14120600A65F23 /* XOREncryption.swift */; };
 		DE8B125E2D14120600A65F23 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11AE2D14120600A65F23 /* MainViewController.swift */; };
-		DE8B125F2D14120600A65F23 /* AIRSelectEntityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11C22D14120600A65F23 /* AIRSelectEntityButton.swift */; };
-		DE8B12602D14120600A65F23 /* SWMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11D32D14120600A65F23 /* SWMViewController.swift */; };
-		DE8B12612D14120600A65F23 /* SLPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11CA2D14120600A65F23 /* SLPickerView.swift */; };
-		DE8B12622D14120600A65F23 /* WritingAssistantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12062D14120600A65F23 /* WritingAssistantResult.swift */; };
 		DE8B12632D14120600A65F23 /* AssistantAnalyzeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B120A2D14120600A65F23 /* AssistantAnalyzeImage.swift */; };
-		DE8B12642D14120600A65F23 /* SLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11CE2D14120600A65F23 /* SLViewModel.swift */; };
 		DE8B12652D14120600A65F23 /* ObservableRetrySingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B115B2D14120600A65F23 /* ObservableRetrySingle.swift */; };
 		DE8B12662D14120600A65F23 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11B12D14120600A65F23 /* CameraService.swift */; };
 		DE8B12672D14120600A65F23 /* HistoryImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B119C2D14120600A65F23 /* HistoryImageCell.swift */; };
 		DE8B12682D14120600A65F23 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11482D14120600A65F23 /* UITapGestureRecognizer+Extension.swift */; };
-		DE8B12692D14120600A65F23 /* PhysicsAssistantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12042D14120600A65F23 /* PhysicsAssistantResult.swift */; };
+		DE8B12692D14120600A65F23 /* HistoryAssistantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12042D14120600A65F23 /* HistoryAssistantResult.swift */; };
 		DE8B126A2D14120600A65F23 /* AMHistoryTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B116B2D14120600A65F23 /* AMHistoryTitleCell.swift */; };
 		DE8B126B2D14120600A65F23 /* AccountHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11912D14120600A65F23 /* AccountHistoryCell.swift */; };
-		DE8B126C2D14120600A65F23 /* TranslateResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12052D14120600A65F23 /* TranslateResult.swift */; };
 		DE8B126D2D14120600A65F23 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11462D14120600A65F23 /* UIDevice+Extension.swift */; };
 		DE8B126E2D14120600A65F23 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11312D14120600A65F23 /* FacebookManager.swift */; };
 		DE8B126F2D14120600A65F23 /* HistoryEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11A22D14120600A65F23 /* HistoryEmptyView.swift */; };
@@ -80,37 +66,29 @@
 		DE8B12712D14120600A65F23 /* Scalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B115C2D14120600A65F23 /* Scalable.swift */; };
 		DE8B12722D14120600A65F23 /* AssistantAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B118C2D14120600A65F23 /* AssistantAssembly.swift */; };
 		DE8B12732D14120600A65F23 /* HistoryTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B119D2D14120600A65F23 /* HistoryTextCell.swift */; };
-		DE8B12742D14120600A65F23 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11892D14120600A65F23 /* Parser.swift */; };
 		DE8B12752D14120600A65F23 /* TryAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11F92D14120600A65F23 /* TryAgainViewController.swift */; };
 		DE8B12762D14120600A65F23 /* SplashReceiptValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11F12D14120600A65F23 /* SplashReceiptValidationObserver.swift */; };
 		DE8B12772D14120600A65F23 /* ARTLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B117C2D14120600A65F23 /* ARTLoadingCell.swift */; };
 		DE8B12782D14120600A65F23 /* ProductPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12222D14120600A65F23 /* ProductPrice.swift */; };
 		DE8B12792D14120600A65F23 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12272D14120600A65F23 /* SessionManager.swift */; };
 		DE8B127A2D14120600A65F23 /* DefaultRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B114B2D14120600A65F23 /* DefaultRequestWrapper.swift */; };
-		DE8B127B2D14120600A65F23 /* AMSelectEntityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11682D14120600A65F23 /* AMSelectEntityButton.swift */; };
 		DE8B127C2D14120600A65F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11622D14120600A65F23 /* AppDelegate.swift */; };
 		DE8B127D2D14120600A65F23 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11382D14120600A65F23 /* NavigationController.swift */; };
 		DE8B127E2D14120600A65F23 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11632D14120600A65F23 /* Appearance.swift */; };
 		DE8B127F2D14120600A65F23 /* AssistantResultTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11802D14120600A65F23 /* AssistantResultTableElement.swift */; };
-		DE8B12802D14120600A65F23 /* SLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11CD2D14120600A65F23 /* SLViewController.swift */; };
-		DE8B12812D14120600A65F23 /* GetLanguagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12142D14120600A65F23 /* GetLanguagesRequest.swift */; };
 		DE8B12822D14120600A65F23 /* AssistantMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11732D14120600A65F23 /* AssistantMainViewController.swift */; };
-		DE8B12832D14120600A65F23 /* AssistantHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11FD2D14120600A65F23 /* AssistantHistoryItem.swift */; };
 		DE8B12842D14120600A65F23 /* ARTQuestionImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B117D2D14120600A65F23 /* ARTQuestionImageCell.swift */; };
-		DE8B12852D14120600A65F23 /* SLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11CC2D14120600A65F23 /* SLView.swift */; };
 		DE8B12862D14120600A65F23 /* GlobalDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11642D14120600A65F23 /* GlobalDefinitions.swift */; };
 		DE8B12872D14120600A65F23 /* RxActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11362D14120600A65F23 /* RxActivityIndicator.swift */; };
-		DE8B12882D14120600A65F23 /* SetCalcBtnImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B118A2D14120600A65F23 /* SetCalcBtnImages.swift */; };
 		DE8B12892D14120600A65F23 /* ARTQuestionTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B117E2D14120600A65F23 /* ARTQuestionTextCell.swift */; };
 		DE8B128A2D14120600A65F23 /* IAPProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12212D14120600A65F23 /* IAPProduct.swift */; };
 		DE8B128B2D14120600A65F23 /* ObservableAndSingle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11422D14120600A65F23 /* ObservableAndSingle+Extension.swift */; };
 		DE8B128C2D14120600A65F23 /* NavigationControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11392D14120600A65F23 /* NavigationControllerSettings.swift */; };
 		DE8B128D2D14120600A65F23 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11562D14120600A65F23 /* NetworkError.swift */; };
 		DE8B128E2D14120600A65F23 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B113D2D14120600A65F23 /* PaddingTextField.swift */; };
-		DE8B128F2D14120600A65F23 /* AssistantHistoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12112D14120600A65F23 /* AssistantHistoryRequest.swift */; };
+		DE8B128F2D14120600A65F23 /* AssistantRecentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12112D14120600A65F23 /* AssistantRecentRequest.swift */; };
 		DE8B12902D14120600A65F23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11652D14120600A65F23 /* SceneDelegate.swift */; };
 		DE8B12912D14120600A65F23 /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11352D14120600A65F23 /* RequestReview.swift */; };
-		DE8B12922D14120600A65F23 /* BiologyAssistantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11FF2D14120600A65F23 /* BiologyAssistantResult.swift */; };
 		DE8B12932D14120600A65F23 /* AssistantImageResizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11C52D14120600A65F23 /* AssistantImageResizeViewController.swift */; };
 		DE8B12942D14120600A65F23 /* AssistantMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B116F2D14120600A65F23 /* AssistantMainTableView.swift */; };
 		DE8B12952D14120600A65F23 /* IAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B121D2D14120600A65F23 /* IAPError.swift */; };
@@ -121,17 +99,13 @@
 		DE8B129A2D14120600A65F23 /* AssistantResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11842D14120600A65F23 /* AssistantResultView.swift */; };
 		DE8B129B2D14120600A65F23 /* TabItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11A82D14120600A65F23 /* TabItemButton.swift */; };
 		DE8B129C2D14120600A65F23 /* UIView+RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11492D14120600A65F23 /* UIView+RxExtension.swift */; };
-		DE8B129D2D14120600A65F23 /* AssistantTranslateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12122D14120600A65F23 /* AssistantTranslateImage.swift */; };
 		DE8B129E2D14120600A65F23 /* AssistantRecognizerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11C82D14120600A65F23 /* AssistantRecognizerController.swift */; };
 		DE8B129F2D14120600A65F23 /* AssistantMainTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B116E2D14120600A65F23 /* AssistantMainTableElement.swift */; };
 		DE8B12A02D14120600A65F23 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12242D14120600A65F23 /* IAPManager.swift */; };
 		DE8B12A12D14120600A65F23 /* PushNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11532D14120600A65F23 /* PushNotificationsManager.swift */; };
 		DE8B12A22D14120600A65F23 /* AccountTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11942D14120600A65F23 /* AccountTableElement.swift */; };
-		DE8B12A32D14120600A65F23 /* AssistantAnalyzeManualWritingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B120C2D14120600A65F23 /* AssistantAnalyzeManualWritingRequest.swift */; };
-		DE8B12A42D14120600A65F23 /* AssistantsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11B52D14120600A65F23 /* AssistantsCollectionView.swift */; };
 		DE8B12A52D14120600A65F23 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11992D14120600A65F23 /* AccountViewController.swift */; };
 		DE8B12A62D14120600A65F23 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11A52D14120600A65F23 /* HistoryViewController.swift */; };
-		DE8B12A72D14120600A65F23 /* AssistantAnalyzeWritingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B120E2D14120600A65F23 /* AssistantAnalyzeWritingImage.swift */; };
 		DE8B12A82D14120600A65F23 /* AIRAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11C12D14120600A65F23 /* AIRAnimationView.swift */; };
 		DE8B12A92D14120600A65F23 /* IAPErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B121E2D14120600A65F23 /* IAPErrorHelper.swift */; };
 		DE8B12AA2D14120600A65F23 /* ProfileBindingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12182D14120600A65F23 /* ProfileBindingRequest.swift */; };
@@ -142,7 +116,6 @@
 		DE8B12AF2D14120600A65F23 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11442D14120600A65F23 /* UIApplication+Extension.swift */; };
 		DE8B12B02D14120600A65F23 /* AssistantImageResizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11C62D14120600A65F23 /* AssistantImageResizeViewModel.swift */; };
 		DE8B12B12D14120600A65F23 /* AssistantAnalyzeManualRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B120B2D14120600A65F23 /* AssistantAnalyzeManualRequest.swift */; };
-		DE8B12B22D14120600A65F23 /* WritingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12072D14120600A65F23 /* WritingMode.swift */; };
 		DE8B12B32D14120600A65F23 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11DF2D14120600A65F23 /* OnboardingView.swift */; };
 		DE8B12B42D14120600A65F23 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11E22D14120600A65F23 /* Currency.swift */; };
 		DE8B12B52D14120600A65F23 /* IAPActionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12202D14120600A65F23 /* IAPActionResult.swift */; };
@@ -150,13 +123,11 @@
 		DE8B12B72D14120600A65F23 /* AccountTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11922D14120600A65F23 /* AccountTitleCell.swift */; };
 		DE8B12B82D14120600A65F23 /* OnboardingWelcome3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11DD2D14120600A65F23 /* OnboardingWelcome3View.swift */; };
 		DE8B12B92D14120600A65F23 /* HistoryTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B119F2D14120600A65F23 /* HistoryTableElement.swift */; };
-		DE8B12BA2D14120600A65F23 /* AssistantTranslateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12132D14120600A65F23 /* AssistantTranslateRequest.swift */; };
 		DE8B12BB2D14120600A65F23 /* AssistantCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11BB2D14120600A65F23 /* AssistantCameraViewController.swift */; };
 		DE8B12BC2D14120600A65F23 /* AssistantImageResizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11C42D14120600A65F23 /* AssistantImageResizeView.swift */; };
 		DE8B12BD2D14120600A65F23 /* PaygateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11EC2D14120600A65F23 /* PaygateView.swift */; };
 		DE8B12BE2D14120600A65F23 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11A62D14120600A65F23 /* HistoryViewModel.swift */; };
 		DE8B12BF2D14120600A65F23 /* AssistantAnalyzeProcessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B120D2D14120600A65F23 /* AssistantAnalyzeProcessRequest.swift */; };
-		DE8B12C02D14120600A65F23 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11882D14120600A65F23 /* CalculatorViewController.swift */; };
 		DE8B12C12D14120600A65F23 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B115D2D14120600A65F23 /* ScreenSize.swift */; };
 		DE8B12C22D14120600A65F23 /* ARTHelpfulCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B117B2D14120600A65F23 /* ARTHelpfulCell.swift */; };
 		DE8B12C32D14120600A65F23 /* PurchaseValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12252D14120600A65F23 /* PurchaseValidationObserver.swift */; };
@@ -175,15 +146,11 @@
 		DE8B12D12D14120600A65F23 /* OnboardingWelcome2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11DC2D14120600A65F23 /* OnboardingWelcome2View.swift */; };
 		DE8B12D22D14120600A65F23 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B112F2D14120600A65F23 /* AmplitudeManager.swift */; };
 		DE8B12D32D14120600A65F23 /* OnboardingWelcome1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11DB2D14120600A65F23 /* OnboardingWelcome1View.swift */; };
-		DE8B12D42D14120600A65F23 /* WritingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12082D14120600A65F23 /* WritingStyle.swift */; };
 		DE8B12D52D14120600A65F23 /* PaygateActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11E52D14120600A65F23 /* PaygateActionsView.swift */; };
 		DE8B12D62D14120600A65F23 /* AssistantMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11722D14120600A65F23 /* AssistantMainView.swift */; };
-		DE8B12D72D14120600A65F23 /* SWMPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11D02D14120600A65F23 /* SWMPickerView.swift */; };
 		DE8B12D82D14120600A65F23 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11A42D14120600A65F23 /* HistoryView.swift */; };
 		DE8B12D92D14120600A65F23 /* AccountActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B118E2D14120600A65F23 /* AccountActionView.swift */; };
-		DE8B12DA2D14120600A65F23 /* ChemistryAssistantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B12002D14120600A65F23 /* ChemistryAssistantResult.swift */; };
 		DE8B12DB2D14120600A65F23 /* AssistantResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11862D14120600A65F23 /* AssistantResultViewModel.swift */; };
-		DE8B12DC2D14120600A65F23 /* AssistantsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11B32D14120600A65F23 /* AssistantsCollectionCell.swift */; };
 		DE8B12EB2D14121B00A65F23 /* FiraMath-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12DD2D14121B00A65F23 /* FiraMath-Regular.otf */; };
 		DE8B12EC2D14121B00A65F23 /* FiraMath-Regular.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12DE2D14121B00A65F23 /* FiraMath-Regular.plist */; };
 		DE8B12ED2D14121B00A65F23 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E12D14121B00A65F23 /* Inter-Bold.ttf */; };
@@ -193,8 +160,6 @@
 		DE8B12F12D14121B00A65F23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E72D14121B00A65F23 /* GoogleService-Info.plist */; };
 		DE8B12F22D14121B00A65F23 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E92D14121B00A65F23 /* Localizable.strings */; };
 		DE8B12F32D14121B00A65F23 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E22D14121B00A65F23 /* Inter-Medium.ttf */; };
-		DE8B12F62D1412DC00A65F23 /* Expression in Frameworks */ = {isa = PBXBuildFile; productRef = DE8B12F52D1412DC00A65F23 /* Expression */; };
-		DE8B12F92D1412F100A65F23 /* SwiftMath in Frameworks */ = {isa = PBXBuildFile; productRef = DE8B12F82D1412F100A65F23 /* SwiftMath */; };
 		DE8B12FD2D14203800A65F23 /* Onboarding.Welcome3.Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12FC2D14203800A65F23 /* Onboarding.Welcome3.Animation.json */; };
 		DE8B12FF2D14203800A65F23 /* Onboarding.Welcome2.Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12FB2D14203800A65F23 /* Onboarding.Welcome2.Animation.json */; };
 		DE8B13032D1426A300A65F23 /* Onboarding.Welcome1.Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DE8B13022D1426A300A65F23 /* Onboarding.Welcome1.Animation.json */; };
@@ -251,8 +216,6 @@
 		DE8B11632D14120600A65F23 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		DE8B11642D14120600A65F23 /* GlobalDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefinitions.swift; sourceTree = "<group>"; };
 		DE8B11652D14120600A65F23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE8B11672D14120600A65F23 /* AMInputBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMInputBottomView.swift; sourceTree = "<group>"; };
-		DE8B11682D14120600A65F23 /* AMSelectEntityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMSelectEntityButton.swift; sourceTree = "<group>"; };
 		DE8B11692D14120600A65F23 /* AMTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTextView.swift; sourceTree = "<group>"; };
 		DE8B116B2D14120600A65F23 /* AMHistoryTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMHistoryTitleCell.swift; sourceTree = "<group>"; };
 		DE8B116C2D14120600A65F23 /* AMInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMInputCell.swift; sourceTree = "<group>"; };
@@ -261,7 +224,6 @@
 		DE8B11722D14120600A65F23 /* AssistantMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantMainView.swift; sourceTree = "<group>"; };
 		DE8B11732D14120600A65F23 /* AssistantMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantMainViewController.swift; sourceTree = "<group>"; };
 		DE8B11742D14120600A65F23 /* AssistantMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantMainViewModel.swift; sourceTree = "<group>"; };
-		DE8B11762D14120600A65F23 /* KatexWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatexWebView.swift; sourceTree = "<group>"; };
 		DE8B11782D14120600A65F23 /* ART.Loader.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ART.Loader.json; sourceTree = "<group>"; };
 		DE8B117A2D14120600A65F23 /* ARTAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTAnswerCell.swift; sourceTree = "<group>"; };
 		DE8B117B2D14120600A65F23 /* ARTHelpfulCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTHelpfulCell.swift; sourceTree = "<group>"; };
@@ -273,9 +235,6 @@
 		DE8B11842D14120600A65F23 /* AssistantResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantResultView.swift; sourceTree = "<group>"; };
 		DE8B11852D14120600A65F23 /* AssistantResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantResultViewController.swift; sourceTree = "<group>"; };
 		DE8B11862D14120600A65F23 /* AssistantResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantResultViewModel.swift; sourceTree = "<group>"; };
-		DE8B11882D14120600A65F23 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
-		DE8B11892D14120600A65F23 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		DE8B118A2D14120600A65F23 /* SetCalcBtnImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCalcBtnImages.swift; sourceTree = "<group>"; };
 		DE8B118C2D14120600A65F23 /* AssistantAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAssembly.swift; sourceTree = "<group>"; };
 		DE8B118E2D14120600A65F23 /* AccountActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountActionView.swift; sourceTree = "<group>"; };
 		DE8B11902D14120600A65F23 /* AccountAboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAboutCell.swift; sourceTree = "<group>"; };
@@ -300,29 +259,17 @@
 		DE8B11AD2D14120600A65F23 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DE8B11AE2D14120600A65F23 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DE8B11B12D14120600A65F23 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
-		DE8B11B32D14120600A65F23 /* AssistantsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantsCollectionCell.swift; sourceTree = "<group>"; };
-		DE8B11B42D14120600A65F23 /* AssistantsCollectionElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantsCollectionElement.swift; sourceTree = "<group>"; };
-		DE8B11B52D14120600A65F23 /* AssistantsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantsCollectionView.swift; sourceTree = "<group>"; };
 		DE8B11B72D14120600A65F23 /* AssistantCameraPermissionProblemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantCameraPermissionProblemView.swift; sourceTree = "<group>"; };
-		DE8B11B82D14120600A65F23 /* AssistantCameraWritingModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantCameraWritingModeView.swift; sourceTree = "<group>"; };
 		DE8B11BA2D14120600A65F23 /* AssistantCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantCameraView.swift; sourceTree = "<group>"; };
 		DE8B11BB2D14120600A65F23 /* AssistantCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantCameraViewController.swift; sourceTree = "<group>"; };
 		DE8B11BC2D14120600A65F23 /* AssistantCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantCameraViewModel.swift; sourceTree = "<group>"; };
 		DE8B11BE2D14120600A65F23 /* ACEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACEView.swift; sourceTree = "<group>"; };
 		DE8B11BF2D14120600A65F23 /* ACEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACEViewController.swift; sourceTree = "<group>"; };
 		DE8B11C12D14120600A65F23 /* AIRAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIRAnimationView.swift; sourceTree = "<group>"; };
-		DE8B11C22D14120600A65F23 /* AIRSelectEntityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIRSelectEntityButton.swift; sourceTree = "<group>"; };
 		DE8B11C42D14120600A65F23 /* AssistantImageResizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantImageResizeView.swift; sourceTree = "<group>"; };
 		DE8B11C52D14120600A65F23 /* AssistantImageResizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantImageResizeViewController.swift; sourceTree = "<group>"; };
 		DE8B11C62D14120600A65F23 /* AssistantImageResizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantImageResizeViewModel.swift; sourceTree = "<group>"; };
 		DE8B11C82D14120600A65F23 /* AssistantRecognizerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantRecognizerController.swift; sourceTree = "<group>"; };
-		DE8B11CA2D14120600A65F23 /* SLPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLPickerView.swift; sourceTree = "<group>"; };
-		DE8B11CC2D14120600A65F23 /* SLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLView.swift; sourceTree = "<group>"; };
-		DE8B11CD2D14120600A65F23 /* SLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLViewController.swift; sourceTree = "<group>"; };
-		DE8B11CE2D14120600A65F23 /* SLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLViewModel.swift; sourceTree = "<group>"; };
-		DE8B11D02D14120600A65F23 /* SWMPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMPickerView.swift; sourceTree = "<group>"; };
-		DE8B11D22D14120600A65F23 /* SWMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMView.swift; sourceTree = "<group>"; };
-		DE8B11D32D14120600A65F23 /* SWMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMViewController.swift; sourceTree = "<group>"; };
 		DE8B11DA2D14120600A65F23 /* OnboardingSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlideView.swift; sourceTree = "<group>"; };
 		DE8B11DB2D14120600A65F23 /* OnboardingWelcome1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWelcome1View.swift; sourceTree = "<group>"; };
 		DE8B11DC2D14120600A65F23 /* OnboardingWelcome2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWelcome2View.swift; sourceTree = "<group>"; };
@@ -347,29 +294,14 @@
 		DE8B11F82D14120600A65F23 /* TryAgainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryAgainView.swift; sourceTree = "<group>"; };
 		DE8B11F92D14120600A65F23 /* TryAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryAgainViewController.swift; sourceTree = "<group>"; };
 		DE8B11FC2D14120600A65F23 /* AssistantAnalyzeImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAnalyzeImageResponse.swift; sourceTree = "<group>"; };
-		DE8B11FD2D14120600A65F23 /* AssistantHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantHistoryItem.swift; sourceTree = "<group>"; };
-		DE8B11FE2D14120600A65F23 /* AssistantHistoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantHistoryPage.swift; sourceTree = "<group>"; };
-		DE8B11FF2D14120600A65F23 /* BiologyAssistantResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiologyAssistantResult.swift; sourceTree = "<group>"; };
-		DE8B12002D14120600A65F23 /* ChemistryAssistantResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemistryAssistantResult.swift; sourceTree = "<group>"; };
-		DE8B12012D14120600A65F23 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		DE8B12022D14120600A65F23 /* MathAssistantResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathAssistantResult.swift; sourceTree = "<group>"; };
+		DE8B11FE2D14120600A65F23 /* AssistantRecentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantRecentPage.swift; sourceTree = "<group>"; };
 		DE8B12032D14120600A65F23 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		DE8B12042D14120600A65F23 /* PhysicsAssistantResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsAssistantResult.swift; sourceTree = "<group>"; };
-		DE8B12052D14120600A65F23 /* TranslateResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResult.swift; sourceTree = "<group>"; };
-		DE8B12062D14120600A65F23 /* WritingAssistantResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingAssistantResult.swift; sourceTree = "<group>"; };
-		DE8B12072D14120600A65F23 /* WritingMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingMode.swift; sourceTree = "<group>"; };
-		DE8B12082D14120600A65F23 /* WritingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingStyle.swift; sourceTree = "<group>"; };
+		DE8B12042D14120600A65F23 /* HistoryAssistantResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAssistantResult.swift; sourceTree = "<group>"; };
 		DE8B120A2D14120600A65F23 /* AssistantAnalyzeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAnalyzeImage.swift; sourceTree = "<group>"; };
 		DE8B120B2D14120600A65F23 /* AssistantAnalyzeManualRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAnalyzeManualRequest.swift; sourceTree = "<group>"; };
-		DE8B120C2D14120600A65F23 /* AssistantAnalyzeManualWritingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAnalyzeManualWritingRequest.swift; sourceTree = "<group>"; };
 		DE8B120D2D14120600A65F23 /* AssistantAnalyzeProcessRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAnalyzeProcessRequest.swift; sourceTree = "<group>"; };
-		DE8B120E2D14120600A65F23 /* AssistantAnalyzeWritingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAnalyzeWritingImage.swift; sourceTree = "<group>"; };
-		DE8B120F2D14120600A65F23 /* AssistantAnalyzeWritingProcessRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAnalyzeWritingProcessRequest.swift; sourceTree = "<group>"; };
 		DE8B12102D14120600A65F23 /* AssistantHelpfulRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantHelpfulRequest.swift; sourceTree = "<group>"; };
-		DE8B12112D14120600A65F23 /* AssistantHistoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantHistoryRequest.swift; sourceTree = "<group>"; };
-		DE8B12122D14120600A65F23 /* AssistantTranslateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantTranslateImage.swift; sourceTree = "<group>"; };
-		DE8B12132D14120600A65F23 /* AssistantTranslateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantTranslateRequest.swift; sourceTree = "<group>"; };
-		DE8B12142D14120600A65F23 /* GetLanguagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLanguagesRequest.swift; sourceTree = "<group>"; };
+		DE8B12112D14120600A65F23 /* AssistantRecentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantRecentRequest.swift; sourceTree = "<group>"; };
 		DE8B12162D14120600A65F23 /* AssistantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantManager.swift; sourceTree = "<group>"; };
 		DE8B12182D14120600A65F23 /* ProfileBindingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBindingRequest.swift; sourceTree = "<group>"; };
 		DE8B12192D14120600A65F23 /* ProfileCreateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCreateRequest.swift; sourceTree = "<group>"; };
@@ -401,9 +333,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE8B12F62D1412DC00A65F23 /* Expression in Frameworks */,
 				96BF069E61B79E47DF7AD534 /* Pods_ALHistory.framework in Frameworks */,
-				DE8B12F92D1412F100A65F23 /* SwiftMath in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,8 +538,6 @@
 		DE8B116A2D14120600A65F23 /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
-				DE8B11672D14120600A65F23 /* AMInputBottomView.swift */,
-				DE8B11682D14120600A65F23 /* AMSelectEntityButton.swift */,
 				DE8B11692D14120600A65F23 /* AMTextView.swift */,
 			);
 			path = Atoms;
@@ -647,19 +575,11 @@
 			isa = PBXGroup;
 			children = (
 				DE8B11712D14120600A65F23 /* Views */,
-				DE8B11722D14120600A65F23 /* AssistantMainView.swift */,
 				DE8B11732D14120600A65F23 /* AssistantMainViewController.swift */,
 				DE8B11742D14120600A65F23 /* AssistantMainViewModel.swift */,
+				DE8B11722D14120600A65F23 /* AssistantMainView.swift */,
 			);
 			path = AssistantMain;
-			sourceTree = "<group>";
-		};
-		DE8B11772D14120600A65F23 /* Atoms */ = {
-			isa = PBXGroup;
-			children = (
-				DE8B11762D14120600A65F23 /* KatexWebView.swift */,
-			);
-			path = Atoms;
 			sourceTree = "<group>";
 		};
 		DE8B11792D14120600A65F23 /* Source */ = {
@@ -673,7 +593,6 @@
 		DE8B117F2D14120600A65F23 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				DE8B11772D14120600A65F23 /* Atoms */,
 				DE8B11792D14120600A65F23 /* Source */,
 				DE8B117A2D14120600A65F23 /* ARTAnswerCell.swift */,
 				DE8B117B2D14120600A65F23 /* ARTHelpfulCell.swift */,
@@ -706,21 +625,11 @@
 			isa = PBXGroup;
 			children = (
 				DE8B11832D14120600A65F23 /* Views */,
-				DE8B11842D14120600A65F23 /* AssistantResultView.swift */,
 				DE8B11852D14120600A65F23 /* AssistantResultViewController.swift */,
 				DE8B11862D14120600A65F23 /* AssistantResultViewModel.swift */,
+				DE8B11842D14120600A65F23 /* AssistantResultView.swift */,
 			);
 			path = AssistantResult;
-			sourceTree = "<group>";
-		};
-		DE8B118B2D14120600A65F23 /* Calculator */ = {
-			isa = PBXGroup;
-			children = (
-				DE8B11882D14120600A65F23 /* CalculatorViewController.swift */,
-				DE8B11892D14120600A65F23 /* Parser.swift */,
-				DE8B118A2D14120600A65F23 /* SetCalcBtnImages.swift */,
-			);
-			path = Calculator;
 			sourceTree = "<group>";
 		};
 		DE8B118D2D14120600A65F23 /* Assistant */ = {
@@ -728,7 +637,6 @@
 			children = (
 				DE8B11752D14120600A65F23 /* AssistantMain */,
 				DE8B11872D14120600A65F23 /* AssistantResult */,
-				DE8B118B2D14120600A65F23 /* Calculator */,
 				DE8B118C2D14120600A65F23 /* AssistantAssembly.swift */,
 			);
 			path = Assistant;
@@ -867,22 +775,10 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		DE8B11B62D14120600A65F23 /* AssistantsCollection */ = {
-			isa = PBXGroup;
-			children = (
-				DE8B11B32D14120600A65F23 /* AssistantsCollectionCell.swift */,
-				DE8B11B42D14120600A65F23 /* AssistantsCollectionElement.swift */,
-				DE8B11B52D14120600A65F23 /* AssistantsCollectionView.swift */,
-			);
-			path = AssistantsCollection;
-			sourceTree = "<group>";
-		};
 		DE8B11B92D14120600A65F23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DE8B11B62D14120600A65F23 /* AssistantsCollection */,
 				DE8B11B72D14120600A65F23 /* AssistantCameraPermissionProblemView.swift */,
-				DE8B11B82D14120600A65F23 /* AssistantCameraWritingModeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -892,9 +788,9 @@
 			children = (
 				DE8B11B22D14120600A65F23 /* Utils */,
 				DE8B11B92D14120600A65F23 /* Views */,
-				DE8B11BA2D14120600A65F23 /* AssistantCameraView.swift */,
 				DE8B11BB2D14120600A65F23 /* AssistantCameraViewController.swift */,
 				DE8B11BC2D14120600A65F23 /* AssistantCameraViewModel.swift */,
+				DE8B11BA2D14120600A65F23 /* AssistantCameraView.swift */,
 			);
 			path = AssistantCamera;
 			sourceTree = "<group>";
@@ -912,7 +808,6 @@
 			isa = PBXGroup;
 			children = (
 				DE8B11C12D14120600A65F23 /* AIRAnimationView.swift */,
-				DE8B11C22D14120600A65F23 /* AIRSelectEntityButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -921,9 +816,9 @@
 			isa = PBXGroup;
 			children = (
 				DE8B11C32D14120600A65F23 /* Views */,
-				DE8B11C42D14120600A65F23 /* AssistantImageResizeView.swift */,
 				DE8B11C52D14120600A65F23 /* AssistantImageResizeViewController.swift */,
 				DE8B11C62D14120600A65F23 /* AssistantImageResizeViewModel.swift */,
+				DE8B11C42D14120600A65F23 /* AssistantImageResizeView.swift */,
 			);
 			path = AssistantImageResize;
 			sourceTree = "<group>";
@@ -936,43 +831,6 @@
 			path = AssistantRecognizer;
 			sourceTree = "<group>";
 		};
-		DE8B11CB2D14120600A65F23 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DE8B11CA2D14120600A65F23 /* SLPickerView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DE8B11CF2D14120600A65F23 /* SelectLanguage */ = {
-			isa = PBXGroup;
-			children = (
-				DE8B11CB2D14120600A65F23 /* Views */,
-				DE8B11CC2D14120600A65F23 /* SLView.swift */,
-				DE8B11CD2D14120600A65F23 /* SLViewController.swift */,
-				DE8B11CE2D14120600A65F23 /* SLViewModel.swift */,
-			);
-			path = SelectLanguage;
-			sourceTree = "<group>";
-		};
-		DE8B11D12D14120600A65F23 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DE8B11D02D14120600A65F23 /* SWMPickerView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DE8B11D42D14120600A65F23 /* SelectWritingMode */ = {
-			isa = PBXGroup;
-			children = (
-				DE8B11D12D14120600A65F23 /* Views */,
-				DE8B11D22D14120600A65F23 /* SWMView.swift */,
-				DE8B11D32D14120600A65F23 /* SWMViewController.swift */,
-			);
-			path = SelectWritingMode;
-			sourceTree = "<group>";
-		};
 		DE8B11D52D14120600A65F23 /* Recognizer */ = {
 			isa = PBXGroup;
 			children = (
@@ -980,8 +838,6 @@
 				DE8B11C02D14120600A65F23 /* AssistantCameraError */,
 				DE8B11C72D14120600A65F23 /* AssistantImageResize */,
 				DE8B11C92D14120600A65F23 /* AssistantRecognizer */,
-				DE8B11CF2D14120600A65F23 /* SelectLanguage */,
-				DE8B11D42D14120600A65F23 /* SelectWritingMode */,
 			);
 			path = Recognizer;
 			sourceTree = "<group>";
@@ -1114,18 +970,9 @@
 			isa = PBXGroup;
 			children = (
 				DE8B11FC2D14120600A65F23 /* AssistantAnalyzeImageResponse.swift */,
-				DE8B11FD2D14120600A65F23 /* AssistantHistoryItem.swift */,
-				DE8B11FE2D14120600A65F23 /* AssistantHistoryPage.swift */,
-				DE8B11FF2D14120600A65F23 /* BiologyAssistantResult.swift */,
-				DE8B12002D14120600A65F23 /* ChemistryAssistantResult.swift */,
-				DE8B12012D14120600A65F23 /* Language.swift */,
-				DE8B12022D14120600A65F23 /* MathAssistantResult.swift */,
+				DE8B11FE2D14120600A65F23 /* AssistantRecentPage.swift */,
 				DE8B12032D14120600A65F23 /* Page.swift */,
-				DE8B12042D14120600A65F23 /* PhysicsAssistantResult.swift */,
-				DE8B12052D14120600A65F23 /* TranslateResult.swift */,
-				DE8B12062D14120600A65F23 /* WritingAssistantResult.swift */,
-				DE8B12072D14120600A65F23 /* WritingMode.swift */,
-				DE8B12082D14120600A65F23 /* WritingStyle.swift */,
+				DE8B12042D14120600A65F23 /* HistoryAssistantResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1135,15 +982,9 @@
 			children = (
 				DE8B120A2D14120600A65F23 /* AssistantAnalyzeImage.swift */,
 				DE8B120B2D14120600A65F23 /* AssistantAnalyzeManualRequest.swift */,
-				DE8B120C2D14120600A65F23 /* AssistantAnalyzeManualWritingRequest.swift */,
 				DE8B120D2D14120600A65F23 /* AssistantAnalyzeProcessRequest.swift */,
-				DE8B120E2D14120600A65F23 /* AssistantAnalyzeWritingImage.swift */,
-				DE8B120F2D14120600A65F23 /* AssistantAnalyzeWritingProcessRequest.swift */,
 				DE8B12102D14120600A65F23 /* AssistantHelpfulRequest.swift */,
-				DE8B12112D14120600A65F23 /* AssistantHistoryRequest.swift */,
-				DE8B12122D14120600A65F23 /* AssistantTranslateImage.swift */,
-				DE8B12132D14120600A65F23 /* AssistantTranslateRequest.swift */,
-				DE8B12142D14120600A65F23 /* GetLanguagesRequest.swift */,
+				DE8B12112D14120600A65F23 /* AssistantRecentRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1320,8 +1161,6 @@
 			);
 			mainGroup = DE8B10FC2D140F5500A65F23;
 			packageReferences = (
-				DE8B12F42D1412DC00A65F23 /* XCRemoteSwiftPackageReference "Expression" */,
-				DE8B12F72D1412F100A65F23 /* XCRemoteSwiftPackageReference "SwiftMath" */,
 			);
 			productRefGroup = DE8B11062D140F5500A65F23 /* Products */;
 			projectDirPath = "";
@@ -1410,9 +1249,7 @@
 				DE8B12322D14120600A65F23 /* GradientView.swift in Sources */,
 				DE8B12332D14120600A65F23 /* HistoryTableView.swift in Sources */,
 				DE8B12342D14120600A65F23 /* BranchManager.swift in Sources */,
-				DE8B12352D14120600A65F23 /* AssistantsCollectionElement.swift in Sources */,
 				DE8B12362D14120600A65F23 /* AccountView.swift in Sources */,
-				DE8B12372D14120600A65F23 /* AMInputBottomView.swift in Sources */,
 				DE8B12382D14120600A65F23 /* UIEdgeInsets+Extension.swift in Sources */,
 				DE8B12392D14120600A65F23 /* RestAPITransport.swift in Sources */,
 				DE8B123A2D14120600A65F23 /* PaddingLabel.swift in Sources */,
@@ -1422,14 +1259,11 @@
 				DE8B123E2D14120600A65F23 /* PaygateInfoView.swift in Sources */,
 				DE8B123F2D14120600A65F23 /* AssistantHelpfulRequest.swift in Sources */,
 				DE8B12402D14120600A65F23 /* AssistantMainViewModel.swift in Sources */,
-				DE8B12412D14120600A65F23 /* MathAssistantResult.swift in Sources */,
-				DE8B12422D14120600A65F23 /* Language.swift in Sources */,
 				DE8B12432D14120600A65F23 /* SplashViewController.swift in Sources */,
 				DE8B12442D14120600A65F23 /* PaygateBestOfferView.swift in Sources */,
 				DE8B12452D14120600A65F23 /* ACEView.swift in Sources */,
 				DE8B12462D14120600A65F23 /* String+Extension.swift in Sources */,
 				DE8B12472D14120600A65F23 /* SplashViewModel.swift in Sources */,
-				DE8B12482D14120600A65F23 /* KatexWebView.swift in Sources */,
 				DE8B12492D14120600A65F23 /* ProfileManager.swift in Sources */,
 				DE8B124A2D14120600A65F23 /* APIRequestBody.swift in Sources */,
 				DE8B124B2D14120600A65F23 /* PaygateViewModel.swift in Sources */,
@@ -1438,34 +1272,25 @@
 				DE8B124E2D14120600A65F23 /* TryAgainView.swift in Sources */,
 				DE8B124F2D14120600A65F23 /* AMTextView.swift in Sources */,
 				DE8B12502D14120600A65F23 /* NumberLaunches.swift in Sources */,
-				DE8B12512D14120600A65F23 /* SWMView.swift in Sources */,
 				DE8B12522D14120600A65F23 /* AssistantManager.swift in Sources */,
-				DE8B12532D14120600A65F23 /* AssistantAnalyzeWritingProcessRequest.swift in Sources */,
 				DE8B12542D14120600A65F23 /* OnboardingViewController.swift in Sources */,
 				DE8B12552D14120600A65F23 /* ProfileCreateRequest.swift in Sources */,
 				DE8B12562D14120600A65F23 /* ContentError.swift in Sources */,
-				DE8B12572D14120600A65F23 /* AssistantHistoryPage.swift in Sources */,
+				DE8B12572D14120600A65F23 /* AssistantRecentPage.swift in Sources */,
 				DE8B12582D14120600A65F23 /* OnboardingSlideView.swift in Sources */,
 				DE8B12592D14120600A65F23 /* AccountTableView.swift in Sources */,
-				DE8B125A2D14120600A65F23 /* AssistantCameraWritingModeView.swift in Sources */,
 				DE8B125B2D14120600A65F23 /* TextAttributes.swift in Sources */,
 				DE8B125C2D14120600A65F23 /* PaygateProductButton.swift in Sources */,
 				DE8B125D2D14120600A65F23 /* XOREncryption.swift in Sources */,
 				DE8B125E2D14120600A65F23 /* MainViewController.swift in Sources */,
-				DE8B125F2D14120600A65F23 /* AIRSelectEntityButton.swift in Sources */,
-				DE8B12602D14120600A65F23 /* SWMViewController.swift in Sources */,
-				DE8B12612D14120600A65F23 /* SLPickerView.swift in Sources */,
-				DE8B12622D14120600A65F23 /* WritingAssistantResult.swift in Sources */,
 				DE8B12632D14120600A65F23 /* AssistantAnalyzeImage.swift in Sources */,
-				DE8B12642D14120600A65F23 /* SLViewModel.swift in Sources */,
 				DE8B12652D14120600A65F23 /* ObservableRetrySingle.swift in Sources */,
 				DE8B12662D14120600A65F23 /* CameraService.swift in Sources */,
 				DE8B12672D14120600A65F23 /* HistoryImageCell.swift in Sources */,
 				DE8B12682D14120600A65F23 /* UITapGestureRecognizer+Extension.swift in Sources */,
-				DE8B12692D14120600A65F23 /* PhysicsAssistantResult.swift in Sources */,
+				DE8B12692D14120600A65F23 /* HistoryAssistantResult.swift in Sources */,
 				DE8B126A2D14120600A65F23 /* AMHistoryTitleCell.swift in Sources */,
 				DE8B126B2D14120600A65F23 /* AccountHistoryCell.swift in Sources */,
-				DE8B126C2D14120600A65F23 /* TranslateResult.swift in Sources */,
 				DE8B126D2D14120600A65F23 /* UIDevice+Extension.swift in Sources */,
 				DE8B126E2D14120600A65F23 /* FacebookManager.swift in Sources */,
 				DE8B126F2D14120600A65F23 /* HistoryEmptyView.swift in Sources */,
@@ -1473,37 +1298,29 @@
 				DE8B12712D14120600A65F23 /* Scalable.swift in Sources */,
 				DE8B12722D14120600A65F23 /* AssistantAssembly.swift in Sources */,
 				DE8B12732D14120600A65F23 /* HistoryTextCell.swift in Sources */,
-				DE8B12742D14120600A65F23 /* Parser.swift in Sources */,
 				DE8B12752D14120600A65F23 /* TryAgainViewController.swift in Sources */,
 				DE8B12762D14120600A65F23 /* SplashReceiptValidationObserver.swift in Sources */,
 				DE8B12772D14120600A65F23 /* ARTLoadingCell.swift in Sources */,
 				DE8B12782D14120600A65F23 /* ProductPrice.swift in Sources */,
 				DE8B12792D14120600A65F23 /* SessionManager.swift in Sources */,
 				DE8B127A2D14120600A65F23 /* DefaultRequestWrapper.swift in Sources */,
-				DE8B127B2D14120600A65F23 /* AMSelectEntityButton.swift in Sources */,
 				DE8B127C2D14120600A65F23 /* AppDelegate.swift in Sources */,
 				DE8B127D2D14120600A65F23 /* NavigationController.swift in Sources */,
 				DE8B127E2D14120600A65F23 /* Appearance.swift in Sources */,
 				DE8B127F2D14120600A65F23 /* AssistantResultTableElement.swift in Sources */,
-				DE8B12802D14120600A65F23 /* SLViewController.swift in Sources */,
-				DE8B12812D14120600A65F23 /* GetLanguagesRequest.swift in Sources */,
 				DE8B12822D14120600A65F23 /* AssistantMainViewController.swift in Sources */,
-				DE8B12832D14120600A65F23 /* AssistantHistoryItem.swift in Sources */,
 				DE8B12842D14120600A65F23 /* ARTQuestionImageCell.swift in Sources */,
-				DE8B12852D14120600A65F23 /* SLView.swift in Sources */,
 				DE8B12862D14120600A65F23 /* GlobalDefinitions.swift in Sources */,
 				DE8B12872D14120600A65F23 /* RxActivityIndicator.swift in Sources */,
-				DE8B12882D14120600A65F23 /* SetCalcBtnImages.swift in Sources */,
 				DE8B12892D14120600A65F23 /* ARTQuestionTextCell.swift in Sources */,
 				DE8B128A2D14120600A65F23 /* IAPProduct.swift in Sources */,
 				DE8B128B2D14120600A65F23 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE8B128C2D14120600A65F23 /* NavigationControllerSettings.swift in Sources */,
 				DE8B128D2D14120600A65F23 /* NetworkError.swift in Sources */,
 				DE8B128E2D14120600A65F23 /* PaddingTextField.swift in Sources */,
-				DE8B128F2D14120600A65F23 /* AssistantHistoryRequest.swift in Sources */,
+				DE8B128F2D14120600A65F23 /* AssistantRecentRequest.swift in Sources */,
 				DE8B12902D14120600A65F23 /* SceneDelegate.swift in Sources */,
 				DE8B12912D14120600A65F23 /* RequestReview.swift in Sources */,
-				DE8B12922D14120600A65F23 /* BiologyAssistantResult.swift in Sources */,
 				DE8B12932D14120600A65F23 /* AssistantImageResizeViewController.swift in Sources */,
 				DE8B12942D14120600A65F23 /* AssistantMainTableView.swift in Sources */,
 				DE8B12952D14120600A65F23 /* IAPError.swift in Sources */,
@@ -1514,17 +1331,13 @@
 				DE8B129A2D14120600A65F23 /* AssistantResultView.swift in Sources */,
 				DE8B129B2D14120600A65F23 /* TabItemButton.swift in Sources */,
 				DE8B129C2D14120600A65F23 /* UIView+RxExtension.swift in Sources */,
-				DE8B129D2D14120600A65F23 /* AssistantTranslateImage.swift in Sources */,
 				DE8B129E2D14120600A65F23 /* AssistantRecognizerController.swift in Sources */,
 				DE8B129F2D14120600A65F23 /* AssistantMainTableElement.swift in Sources */,
 				DE8B12A02D14120600A65F23 /* IAPManager.swift in Sources */,
 				DE8B12A12D14120600A65F23 /* PushNotificationsManager.swift in Sources */,
 				DE8B12A22D14120600A65F23 /* AccountTableElement.swift in Sources */,
-				DE8B12A32D14120600A65F23 /* AssistantAnalyzeManualWritingRequest.swift in Sources */,
-				DE8B12A42D14120600A65F23 /* AssistantsCollectionView.swift in Sources */,
 				DE8B12A52D14120600A65F23 /* AccountViewController.swift in Sources */,
 				DE8B12A62D14120600A65F23 /* HistoryViewController.swift in Sources */,
-				DE8B12A72D14120600A65F23 /* AssistantAnalyzeWritingImage.swift in Sources */,
 				DE8B12A82D14120600A65F23 /* AIRAnimationView.swift in Sources */,
 				DE8B12A92D14120600A65F23 /* IAPErrorHelper.swift in Sources */,
 				DE8B12AA2D14120600A65F23 /* ProfileBindingRequest.swift in Sources */,
@@ -1535,7 +1348,6 @@
 				DE8B12AF2D14120600A65F23 /* UIApplication+Extension.swift in Sources */,
 				DE8B12B02D14120600A65F23 /* AssistantImageResizeViewModel.swift in Sources */,
 				DE8B12B12D14120600A65F23 /* AssistantAnalyzeManualRequest.swift in Sources */,
-				DE8B12B22D14120600A65F23 /* WritingMode.swift in Sources */,
 				DE8B12B32D14120600A65F23 /* OnboardingView.swift in Sources */,
 				DE8B12B42D14120600A65F23 /* Currency.swift in Sources */,
 				DE8B12B52D14120600A65F23 /* IAPActionResult.swift in Sources */,
@@ -1543,13 +1355,11 @@
 				DE8B12B72D14120600A65F23 /* AccountTitleCell.swift in Sources */,
 				DE8B12B82D14120600A65F23 /* OnboardingWelcome3View.swift in Sources */,
 				DE8B12B92D14120600A65F23 /* HistoryTableElement.swift in Sources */,
-				DE8B12BA2D14120600A65F23 /* AssistantTranslateRequest.swift in Sources */,
 				DE8B12BB2D14120600A65F23 /* AssistantCameraViewController.swift in Sources */,
 				DE8B12BC2D14120600A65F23 /* AssistantImageResizeView.swift in Sources */,
 				DE8B12BD2D14120600A65F23 /* PaygateView.swift in Sources */,
 				DE8B12BE2D14120600A65F23 /* HistoryViewModel.swift in Sources */,
 				DE8B12BF2D14120600A65F23 /* AssistantAnalyzeProcessRequest.swift in Sources */,
-				DE8B12C02D14120600A65F23 /* CalculatorViewController.swift in Sources */,
 				DE8B12C12D14120600A65F23 /* ScreenSize.swift in Sources */,
 				DE8B12C22D14120600A65F23 /* ARTHelpfulCell.swift in Sources */,
 				DE8B12C32D14120600A65F23 /* PurchaseValidationObserver.swift in Sources */,
@@ -1568,15 +1378,11 @@
 				DE8B12D12D14120600A65F23 /* OnboardingWelcome2View.swift in Sources */,
 				DE8B12D22D14120600A65F23 /* AmplitudeManager.swift in Sources */,
 				DE8B12D32D14120600A65F23 /* OnboardingWelcome1View.swift in Sources */,
-				DE8B12D42D14120600A65F23 /* WritingStyle.swift in Sources */,
 				DE8B12D52D14120600A65F23 /* PaygateActionsView.swift in Sources */,
 				DE8B12D62D14120600A65F23 /* AssistantMainView.swift in Sources */,
-				DE8B12D72D14120600A65F23 /* SWMPickerView.swift in Sources */,
 				DE8B12D82D14120600A65F23 /* HistoryView.swift in Sources */,
 				DE8B12D92D14120600A65F23 /* AccountActionView.swift in Sources */,
-				DE8B12DA2D14120600A65F23 /* ChemistryAssistantResult.swift in Sources */,
 				DE8B12DB2D14120600A65F23 /* AssistantResultViewModel.swift in Sources */,
-				DE8B12DC2D14120600A65F23 /* AssistantsCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1608,11 +1414,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RXCT63549X;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ALHistory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI History";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This will allow our app to analyze and solve the tasks and problems printed on a sheet of paper";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This will allow our app to analyze and solve the tasks and problems printed on a sheet of paper";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1627,6 +1437,8 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Science Solver Development";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1643,11 +1455,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RXCT63549X;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ALHistory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI History";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This will allow our app to analyze and solve the tasks and problems printed on a sheet of paper";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This will allow our app to analyze and solve the tasks and problems printed on a sheet of paper";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1662,6 +1478,8 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Science Solver Development";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1813,38 +1631,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DE8B12F42D1412DC00A65F23 /* XCRemoteSwiftPackageReference "Expression" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nicklockwood/Expression.git";
-			requirement = {
-				kind = exactVersion;
-				version = 0.13.9;
-			};
-		};
-		DE8B12F72D1412F100A65F23 /* XCRemoteSwiftPackageReference "SwiftMath" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mgriebling/SwiftMath.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.5.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DE8B12F52D1412DC00A65F23 /* Expression */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE8B12F42D1412DC00A65F23 /* XCRemoteSwiftPackageReference "Expression" */;
-			productName = Expression;
-		};
-		DE8B12F82D1412F100A65F23 /* SwiftMath */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE8B12F72D1412F100A65F23 /* XCRemoteSwiftPackageReference "SwiftMath" */;
-			productName = SwiftMath;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE8B10FD2D140F5500A65F23 /* Project object */;
 }

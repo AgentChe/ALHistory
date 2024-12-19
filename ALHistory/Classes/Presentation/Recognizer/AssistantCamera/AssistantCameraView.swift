@@ -9,11 +9,9 @@ import UIKit
 
 final class AssistantCameraView: UIView {
     lazy var closeButton = makeTapAreaButton(imageName: "AssistantCamera.Close")
-    lazy var collectionView = makeCollectionView()
     lazy var wallpapersButton = makeTapAreaButton(imageName: "AssistantCamera.Wallpapers")
     lazy var takeButton = makeTapAreaButton(imageName: "AssistantCamera.Take")
     lazy var flashButton = makeTapAreaButton(imageName: "AssistantCamera.Flash")
-    lazy var writingModeView = makeWritingModeView()
     lazy var permissionProblemView = makePermissionProblemView()
     
     override init(frame: CGRect) {
@@ -46,13 +44,6 @@ private extension AssistantCameraView {
         ])
         
         NSLayoutConstraint.activate([
-            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            collectionView.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: 12.scale),
-            collectionView.heightAnchor.constraint(equalToConstant: 31.scale)
-        ])
-        
-        NSLayoutConstraint.activate([
             wallpapersButton.widthAnchor.constraint(equalToConstant: 40.scale),
             wallpapersButton.heightAnchor.constraint(equalToConstant: 40.scale),
             wallpapersButton.trailingAnchor.constraint(equalTo: takeButton.leadingAnchor, constant: -32.scale),
@@ -74,13 +65,6 @@ private extension AssistantCameraView {
         ])
         
         NSLayoutConstraint.activate([
-            writingModeView.widthAnchor.constraint(equalToConstant: 172.scale),
-            writingModeView.heightAnchor.constraint(equalToConstant: 43.scale),
-            writingModeView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            writingModeView.bottomAnchor.constraint(equalTo: takeButton.topAnchor, constant: -24.scale)
-        ])
-        
-        NSLayoutConstraint.activate([
             permissionProblemView.leadingAnchor.constraint(equalTo: leadingAnchor),
             permissionProblemView.trailingAnchor.constraint(equalTo: trailingAnchor),
             permissionProblemView.centerYAnchor.constraint(equalTo: centerYAnchor)
@@ -93,30 +77,6 @@ private extension AssistantCameraView {
     func makeTapAreaButton(imageName: String) -> TapAreaButton {
         let view = TapAreaButton()
         view.setImage(UIImage(named: imageName), for: .normal)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(view)
-        return view
-    }
-    
-    func makeCollectionView() -> AssistantsCollectionView {
-        let layout = UICollectionViewFlowLayout()
-        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-        layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 12.scale
-        layout.minimumInteritemSpacing = 0
-        
-        let view = AssistantsCollectionView(frame: .zero, collectionViewLayout: layout)
-        view.backgroundColor = UIColor.clear
-        view.showsHorizontalScrollIndicator = false
-        view.contentInset = UIEdgeInsets(horizontal: 100.scale)
-        view.setContentOffset(CGPoint(x: -100.scale, y: 0), animated: false)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(view)
-        return view
-    }
-    
-    func makeWritingModeView() -> AssistantCameraWritingModeView {
-        let view = AssistantCameraWritingModeView(style: .camera)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

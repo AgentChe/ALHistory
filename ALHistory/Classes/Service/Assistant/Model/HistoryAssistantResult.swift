@@ -1,5 +1,5 @@
 //
-//  ChemistryAssistantResult.swift
+//  HistoryAssistantResult.swift
 //  ScienceSolver
 //
 //  Created by Андрей Чернышев on 09.09.2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ChemistryAssistantResult {
+struct HistoryAssistantResult {
     struct Request {
         let imageUrl: URL?
         let content: String // html текст
@@ -34,7 +34,7 @@ struct ChemistryAssistantResult {
 }
 
 // MARK: Public
-extension ChemistryAssistantResult {
+extension HistoryAssistantResult {
     init?(body: [String: Any]) {
         guard
             let threadId = body["thread_id"] as? String,
@@ -75,7 +75,7 @@ extension ChemistryAssistantResult {
         }()
         guard let response else { return nil }
         
-        self = ChemistryAssistantResult(
+        self = HistoryAssistantResult(
             threadId: threadId,
             helpful: body["helpful"] as? Bool,
             created: created,
@@ -84,17 +84,17 @@ extension ChemistryAssistantResult {
         )
     }
     
-    static func map(response: Any) -> ChemistryAssistantResult? {
+    static func map(response: Any) -> HistoryAssistantResult? {
         guard
             let json = response as? [String: Any],
             let body = json["body"] as? [String: Any]
         else { return nil }
         
-        return ChemistryAssistantResult(body: body)
+        return HistoryAssistantResult(body: body)
     }
     
-    func helpful(_ helpful: Bool?) -> ChemistryAssistantResult {
-        ChemistryAssistantResult(
+    func helpful(_ helpful: Bool?) -> HistoryAssistantResult {
+        HistoryAssistantResult(
             threadId: threadId,
             helpful: helpful,
             created: created,
@@ -105,11 +105,11 @@ extension ChemistryAssistantResult {
 }
 
 // MARK: Public
-extension ChemistryAssistantResult.Response {
-    static func map(content: [String: Any]) -> ChemistryAssistantResult.Response? {
+extension HistoryAssistantResult.Response {
+    static func map(content: [String: Any]) -> HistoryAssistantResult.Response? {
         guard let detected = content["detected"] as? Bool else { return nil }
         
-        let data: ChemistryAssistantResult.Response.Data? = {
+        let data: HistoryAssistantResult.Response.Data? = {
             guard
                 detected,
                 let body = content["body"] as? String,
@@ -117,7 +117,7 @@ extension ChemistryAssistantResult.Response {
                 let recommendation = content["recommendation"] as? String
             else { return nil }
             
-            return ChemistryAssistantResult.Response.Data(
+            return HistoryAssistantResult.Response.Data(
                 userRawInput: content["user_raw_input"] as? String,
                 body: body,
                 explanation: explanation,
@@ -125,7 +125,7 @@ extension ChemistryAssistantResult.Response {
             )
         }()
         
-        return ChemistryAssistantResult.Response(
+        return HistoryAssistantResult.Response(
             detected: detected,
             error: content["error"] as? String,
             data: data

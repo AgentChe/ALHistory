@@ -10,7 +10,7 @@ import WebKit
 
 final class ARTAnswerCell: UITableViewCell {
     var didTapRefresh: (() -> Void)?
-    var didTapCopy: ((AssistantResultTableAnswerElement) -> Void)?
+    var didTapCopy: ((HistoryAssistantResult.Response) -> Void)?
     
     lazy var container = makeContainer()
     lazy var stackView = makeStackView()
@@ -26,7 +26,7 @@ final class ARTAnswerCell: UITableViewCell {
         .lineHeight(22.scale)
         .textAlignment(.left)
     
-    private var answer: AssistantResultTableAnswerElement?
+    private var answer: HistoryAssistantResult.Response?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -42,7 +42,7 @@ final class ARTAnswerCell: UITableViewCell {
 
 // MARK: Public
 extension ARTAnswerCell {
-    func setup(answer: AssistantResultTableAnswerElement) {
+    func setup(answer: HistoryAssistantResult.Response) {
         self.answer = answer
         
         stackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
@@ -76,77 +76,11 @@ private extension ARTAnswerCell {
         didTapCopy?(answer)
     }
     
-    func makeViews(answer: AssistantResultTableAnswerElement) -> [UIView] {
-        switch answer {
-        case .math(let response):
-            return makeMathViews(response: response)
-        case .physics(let response):
-            return makePhysicsViews(response: response)
-        case .biology(let response):
-            return makeBiologyViews(response: response)
-        case .chemistry(let response):
-            return makeChemistryViews(response: response)
-        case .writing(let response):
-            return makeWritingViews(response: response)
-        case .language(let translateResult):
-            return makeLanguageViews(response: translateResult)
-        }
-    }
-    
-    func makeMathViews(response: MathAssistantResult.Response) -> [UIView] {
-        var views =  [UIView]()
-        
-        guard response.detected, let data = response.data else {
-            let errorLabel = makeNormalTextLabel(response.error ?? "")
-            views.append(errorLabel)
-            
-            return views
-        }
-        
-        if let userFormula = data.userFormula {
-            let userFormulaViews = [
-                makeTitleLabel("AssistantResult.Math.UserFormula".localized),
-                makeKatexWebView(userFormula),
-                makeSeparator()
-            ]
-            views.append(contentsOf: userFormulaViews)
-        }
-        
-        let answerViews = [
-            makeTitleLabel("AssistantResult.Answer".localized),
-            makeKatexWebView(data.body),
-            (data.explanation == nil && data.recommendation == nil) ? nil : makeSeparator()
-        ].compactMap { $0 }
-        views.append(contentsOf: answerViews)
-        
-        if let explanation = data.explanation {
-            let explanationViews = [
-                makeTitleLabel("AssistantResult.Explanation".localized),
-                makeKatexWebView(explanation),
-                (data.recommendation == nil) ? nil : makeSeparator()
-            ].compactMap { $0 }
-            views.append(contentsOf: explanationViews)
-        }
-        
-        if let recommendation = data.recommendation {
-            let recommendationViews = [
-                makeTitleLabel("AssistantResult.Recommendation".localized),
-                makeKatexWebView(recommendation)
-            ]
-            views.append(contentsOf: recommendationViews)
-        }
-        
-        let actionsView = makeActionsView()
-        views.append(actionsView)
-        
-        return views
-    }
-    
-    func makePhysicsViews(response: PhysicsAssistantResult.Response) -> [UIView] {
+    func makeViews(answer: HistoryAssistantResult.Response) -> [UIView] {
         var views = [UIView]()
         
-        guard response.detected, let data = response.data else {
-            let errorLabel = makeNormalTextLabel(response.error ?? "")
+        guard answer.detected, let data = answer.data else {
+            let errorLabel = makeNormalTextLabel(answer.error ?? "")
             views.append(errorLabel)
             
             return views
@@ -182,140 +116,6 @@ private extension ARTAnswerCell {
         views.append(actionsView)
         
         return views
-    }
-    
-    func makeBiologyViews(response: BiologyAssistantResult.Response) -> [UIView] {
-        var views = [UIView]()
-        
-        guard response.detected, let data = response.data else {
-            let errorLabel = makeNormalTextLabel(response.error ?? "")
-            views.append(errorLabel)
-            
-            return views
-        }
-        
-        if !data.body.isEmpty {
-            let bodyViews = [
-                makeTitleLabel("AssistantResult.Answer".localized),
-                makeHTMLTextLabel(data.body),
-                (data.explanation.isEmpty && data.recommendation.isEmpty) ? nil : makeSeparator()
-            ].compactMap { $0 }
-            views.append(contentsOf: bodyViews)
-        }
-        
-        if !data.explanation.isEmpty {
-            let explanationViews = [
-                makeTitleLabel("AssistantResult.Explanation".localized),
-                makeHTMLTextLabel(data.explanation),
-                (data.recommendation.isEmpty) ? nil : makeSeparator()
-            ].compactMap { $0 }
-            views.append(contentsOf: explanationViews)
-        }
-        
-        if !data.recommendation.isEmpty {
-            let recommendationViews = [
-                makeTitleLabel("AssistantResult.Recommendation".localized),
-                makeHTMLTextLabel(data.recommendation)
-            ]
-            views.append(contentsOf: recommendationViews)
-        }
-        
-        let actionsView = makeActionsView()
-        views.append(actionsView)
-        
-        return views
-    }
-    
-    func makeChemistryViews(response: ChemistryAssistantResult.Response) -> [UIView] {
-        var views = [UIView]()
-        
-        guard response.detected, let data = response.data else {
-            let errorLabel = makeNormalTextLabel(response.error ?? "")
-            views.append(errorLabel)
-            
-            return views
-        }
-        
-        if !data.body.isEmpty {
-            let bodyViews = [
-                makeTitleLabel("AssistantResult.Answer".localized),
-                makeHTMLTextLabel(data.body),
-                (data.explanation.isEmpty && data.recommendation.isEmpty) ? nil : makeSeparator()
-            ].compactMap { $0 }
-            views.append(contentsOf: bodyViews)
-        }
-        
-        if !data.explanation.isEmpty {
-            let explanationViews = [
-                makeTitleLabel("AssistantResult.Explanation".localized),
-                makeHTMLTextLabel(data.explanation),
-                (data.recommendation.isEmpty) ? nil : makeSeparator()
-            ].compactMap { $0 }
-            views.append(contentsOf: explanationViews)
-        }
-        
-        if !data.recommendation.isEmpty {
-            let recommendationViews = [
-                makeTitleLabel("AssistantResult.Recommendation".localized),
-                makeHTMLTextLabel(data.recommendation)
-            ]
-            views.append(contentsOf: recommendationViews)
-        }
-        
-        let actionsView = makeActionsView()
-        views.append(actionsView)
-        
-        return views
-    }
-    
-    func makeWritingViews(response: WritingAssistantResult.Response) -> [UIView] {
-        var views = [UIView]()
-        
-        guard response.detected, let data = response.data else {
-            let errorLabel = makeNormalTextLabel(response.error ?? "")
-            views.append(errorLabel)
-            
-            return views
-        }
-        
-        if !data.body.isEmpty {
-            let bodyViews = [
-                makeTitleLabel("AssistantResult.Answer".localized),
-                makeHTMLTextLabel(data.body),
-                (data.explanation.isEmpty && data.recommendation.isEmpty) ? nil : makeSeparator()
-            ].compactMap { $0 }
-            views.append(contentsOf: bodyViews)
-        }
-        
-        if !data.explanation.isEmpty {
-            let explanationViews = [
-                makeTitleLabel("AssistantResult.Explanation".localized),
-                makeHTMLTextLabel(data.explanation),
-                (data.recommendation.isEmpty) ? nil : makeSeparator()
-            ].compactMap { $0 }
-            views.append(contentsOf: explanationViews)
-        }
-        
-        if !data.recommendation.isEmpty {
-            let recommendationViews = [
-                makeTitleLabel("AssistantResult.Recommendation".localized),
-                makeHTMLTextLabel(data.recommendation)
-            ]
-            views.append(contentsOf: recommendationViews)
-        }
-        
-        let actionsView = makeActionsView()
-        views.append(actionsView)
-        
-        return views
-    }
-    
-    func makeLanguageViews(response: TranslateResult) -> [UIView] {
-        [
-            makeTitleLabel("AssistantResult.Answer".localized),
-            makeNormalTextLabel(response.translate),
-            makeActionsView()
-        ]
     }
     
     func makeTitleLabel(_ text: String) -> UILabel {
@@ -324,12 +124,6 @@ private extension ARTAnswerCell {
         view.attributedText = text.attributed(with: titleAttrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
-    }
-    
-    func makeKatexWebView(_ katex: String) -> KatexWebView {
-        KatexWebView(katex: katex) { [weak self] in
-            self?.updateLayout()
-        }
     }
     
     func makeNormalTextLabel(_ text: String) -> UILabel {

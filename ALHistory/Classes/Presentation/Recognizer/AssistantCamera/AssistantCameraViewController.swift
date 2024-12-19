@@ -11,26 +11,12 @@ import PhotosUI
 import AVFoundation
 
 final class AssistantCameraViewController: UIViewController {
-    struct Result {
-        enum Assistant {
-            case math
-            case physics
-            case biology
-            case chemistry
-            case writing(WritingMode)
-            case language
-        }
-        
-        let image: UIImage
-        let assistant: Assistant
-    }
-    
     var didClose: (() -> Void)?
-    var didResult: ((Result) -> Void)?
+    var didResult: ((UIImage) -> Void)?
     
     private lazy var mainView = AssistantCameraView()
     
-    private let viewModel: AssistantCameraViewModel
+    private lazy var viewModel = AssistantCameraViewModel()
     
     private lazy var disposeBag = DisposeBag()
     
@@ -39,16 +25,6 @@ final class AssistantCameraViewController: UIViewController {
         cameraService.delegate = self
         return cameraService
     }()
-    
-    private init(assistant: AssistantsCollectionElement.Assistant?) {
-        viewModel = AssistantCameraViewModel(assistant: assistant)
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func loadView() {
         view = mainView
@@ -60,7 +36,6 @@ final class AssistantCameraViewController: UIViewController {
         let output = viewModel.configure(input: AssistantCameraViewModel.Input(
             didTapDismiss: mainView.closeButton.rx.tap.asSignal(),
             didTapSelectImageFromLibrary: mainView.wallpapersButton.rx.tap.asSignal(),
-            didSelect: mainView.collectionView.didSelect,
             didTapTakePhoto: mainView.takeButton.rx.tap.asSignal(),
             didTapAllowAccess: mainView.permissionProblemView.allowAccessButton.rx.tap.asSignal()
         ))
@@ -77,18 +52,6 @@ final class AssistantCameraViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        output.elements
-            .drive(Binder(mainView.collectionView) { base, elements in
-                base.setup(elements: elements)
-            })
-            .disposed(by: disposeBag)
-        
-        output.writingModeHidden
-            .drive(Binder(mainView.writingModeView) { base, hidden in
-                base.isHidden = hidden
-            })
-            .disposed(by: disposeBag)
-        
         rx.methodInvoked(#selector(UIViewController.viewDidLayoutSubviews))
             .take(1)
             .bind(to: Binder(self) { base, _ in
@@ -100,8 +63,8 @@ final class AssistantCameraViewController: UIViewController {
 
 // MARK: AssistantCameraViewController
 extension AssistantCameraViewController {
-    static func make(assistant: AssistantsCollectionElement.Assistant? = nil) -> AssistantCameraViewController {
-        let vc = AssistantCameraViewController(assistant: assistant)
+    static func make() -> AssistantCameraViewController {
+        let vc = AssistantCameraViewController()
         vc.modalPresentationStyle = .fullScreen
         return vc
     }
@@ -169,28 +132,9 @@ private extension AssistantCameraViewController {
     }
     
     func complete(image: UIImage?) {
-        guard let image, let element = mainView.collectionView.elements.first(where: { $0.marked })?.assistant else { return }
+        guard let image else { return }
         
-        let assistant: Result.Assistant = {
-            switch element {
-            case .math:
-                return .math
-            case .physics:
-                return .physics
-            case .biology:
-                return .biology
-            case .chemistry:
-                return .chemistry
-            case .writing:
-                return .writing(mainView.writingModeView.mode)
-            case .language:
-                return .language
-            }
-        }()
-        
-        let result = Result(image: image, assistant: assistant)
-        
-        didResult?(result)
+        didResult?(image)
     }
     
     func setupCameraLayer() {

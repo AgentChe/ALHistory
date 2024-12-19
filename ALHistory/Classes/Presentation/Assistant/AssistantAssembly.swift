@@ -8,11 +8,11 @@
 import UIKit
 
 final class AssistantAssembly {
-    func recognize(assistant: AssistantsCollectionElement.Assistant? = nil, from: UIViewController) {
+    func recognize(from: UIViewController) {
         let nc = NavigationController()
         nc.modalPresentationStyle = .fullScreen
         
-        let recognizerVC = AssistantRecognizerController.make(assistant: assistant, close: { [weak nc] in
+        let recognizerVC = AssistantRecognizerController.make(close: { [weak nc] in
             nc?.dismiss(animated: true)
         }, result: { [weak nc] result in
             let resultVC = AssistantResultViewController.make(recognized: result) { [weak nc] in
@@ -26,15 +26,15 @@ final class AssistantAssembly {
         from.present(nc, animated: true)
     }
     
-    func manualAnalyze(data: AssistantMainViewController.DataForManualAnalyze, from: UINavigationController) {
+    func manualAnalyze(data: String, from: UINavigationController) {
         let resultVC = AssistantResultViewController.make(manual: data) { [weak from] in
             from?.popViewController(animated: true)
         }
         from.pushViewController(resultVC, animated: true)
     }
     
-    func history(item: AssistantHistoryItem, from: UINavigationController) {
-        let resultVC = AssistantResultViewController.make(historyItem: item) { [weak from] in
+    func recent(item: HistoryAssistantResult, from: UINavigationController) {
+        let resultVC = AssistantResultViewController.make(recentItem: item) { [weak from] in
             from?.popViewController(animated: true)
         }
         from.pushViewController(resultVC, animated: true)

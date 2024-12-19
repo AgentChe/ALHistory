@@ -14,12 +14,9 @@ final class AssistantMainTableView: UITableView {
     
     private lazy var inputCell = AMInputCell(style: .default, reuseIdentifier: nil)
     
-    private lazy var didTapHistoryTrigger = PublishRelay<Void>()
-    private lazy var didSelectHistoryItemTrigger = PublishRelay<AssistantHistoryItem>()
-    private lazy var didTapSelectAdditionalDataTrigger = PublishRelay<Void>()
-    private lazy var didTapCalculatorTrigger = PublishRelay<Void>()
+    private lazy var didTapRecentTrigger = PublishRelay<Void>()
+    private lazy var didSelectRecentItemTrigger = PublishRelay<HistoryAssistantResult>()
     private lazy var didTapCameraTrigger = PublishRelay<Void>()
-    private lazy var didChangeWritingModeTrigger = PublishRelay<WritingMode>()
     private lazy var didTapDoneTrigger = PublishRelay<String>()
     
     override init(frame: CGRect, style: UITableView.Style) {
@@ -41,40 +38,16 @@ extension AssistantMainTableView {
         reloadData()
     }
     
-    func setup(assistant: AssistantsCollectionElement.Assistant) {
-        inputCell.setup(assistant: assistant)
+    var didTapRecent: Signal<Void> {
+        didTapRecentTrigger.asSignal()
     }
     
-    func setup(writingMode: WritingMode) {
-        inputCell.setup(writingMode: writingMode)
-    }
-    
-    func setup(additionalDataEntity: AMSelectEntityButton.Entity?) {
-        inputCell.setup(additionalDataEntity: additionalDataEntity)
-    }
-    
-    var didTapHistory: Signal<Void> {
-        didTapHistoryTrigger.asSignal()
-    }
-    
-    var didSelectHistoryItem: Signal<AssistantHistoryItem> {
-        didSelectHistoryItemTrigger.asSignal()
-    }
-    
-    var didTapSelectAdditionalData: Signal<Void> {
-        didTapSelectAdditionalDataTrigger.asSignal()
-    }
-    
-    var didTapCalculator: Signal<Void> {
-        didTapCalculatorTrigger.asSignal()
+    var didSelectRecentItem: Signal<HistoryAssistantResult> {
+        didSelectRecentItemTrigger.asSignal()
     }
     
     var didTapCamera: Signal<Void> {
         didTapCameraTrigger.asSignal()
-    }
-    
-    var didChangeWritingMode: Signal<WritingMode> {
-        didChangeWritingModeTrigger.asSignal()
     }
     
     var didTapDone: Signal<String> {
@@ -92,9 +65,9 @@ extension AssistantMainTableView: UITableViewDataSource {
         switch elements[indexPath.row] {
         case .input:
             return inputCell
-        case .historyTitle:
+        case .recentTitle:
             return dequeueReusableCell(withIdentifier: String(describing: AMHistoryTitleCell.self), for: indexPath)
-        case .historyItem(let historyItem):
+        case .recentItem(let historyItem):
             switch historyItem.mode {
             case .image(let url):
                 let cell = dequeueReusableCell(withIdentifier: String(describing: HistoryImageCell.self), for: indexPath) as! HistoryImageCell
@@ -117,10 +90,10 @@ extension AssistantMainTableView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch elements[indexPath.row] {
-        case .historyTitle:
-            didTapHistoryTrigger.accept(Void())
-        case .historyItem(let element):
-            didSelectHistoryItemTrigger.accept(element.item)
+        case .recentTitle:
+            didTapRecentTrigger.accept(Void())
+        case .recentItem(let element):
+            didSelectRecentItemTrigger.accept(element.item)
         default:
             return
         }
@@ -137,20 +110,8 @@ private extension AssistantMainTableView {
         dataSource = self
         delegate = self
         
-        inputCell.didTapSelectAdditionalData = { [weak self] in
-            self?.didTapSelectAdditionalDataTrigger.accept(Void())
-        }
-        
-        inputCell.didTapCalculator = { [weak self] in
-            self?.didTapCalculatorTrigger.accept(Void())
-        }
-        
         inputCell.didTapCamera = { [weak self] in
             self?.didTapCameraTrigger.accept(Void())
-        }
-        
-        inputCell.didChangeWritingMode = { [weak self] mode in
-            self?.didChangeWritingModeTrigger.accept(mode)
         }
         
         inputCell.didTapDone = { [weak self] text in

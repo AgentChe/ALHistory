@@ -73,7 +73,7 @@ private extension HistoryViewController {
         case .select(let item):
             guard let nc = navigationController else { return }
             
-            AssistantAssembly().history(item: item, from: nc)
+            AssistantAssembly().recent(item: item, from: nc)
         }
     }
     

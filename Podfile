@@ -9,7 +9,6 @@ target 'ALHistory' do
   pod 'lottie-ios'
   pod 'Kingfisher'
   pod 'Mantis'
-  pod 'iosMath'
   
   pod 'RxSwift'
   pod 'RxCocoa'

@@ -10,7 +10,7 @@ import RxCocoa
 
 final class HistoryViewModel {
     enum Route {
-        case back, select(AssistantHistoryItem)
+        case back, select(HistoryAssistantResult)
     }
     
     private lazy var firstPageActivity = RxActivityIndicator()
@@ -23,7 +23,7 @@ final class HistoryViewModel {
 extension HistoryViewModel {
     struct Input {
         let didTapBack: Signal<Void>
-        let didSelect: Signal<AssistantHistoryItem>
+        let didSelect: Signal<HistoryAssistantResult>
         let didScrollToBottom: Signal<Void>
     }
     
@@ -50,11 +50,11 @@ extension HistoryViewModel {
 // MARK: Private
 private extension HistoryViewModel {
     func makeElements(didScrollToBottom: Signal<Void>) -> Driver<[HistoryTableElement]> {
-        var lastPage: AssistantHistoryPage?
+        var lastPage: AssistantRecentPage?
         
-        func fetch(page: Int) -> Driver<AssistantHistoryPage> {
+        func fetch(page: Int) -> Driver<AssistantRecentPage> {
             assistantManager
-                .history(page: page)
+                .recent(page: page)
                 .trackActivity(page == 1 ? firstPageActivity : paginationActivity)
                 .compactMap { $0 }
                 .asDriver(onErrorDriveWith: .never())
@@ -65,11 +65,11 @@ private extension HistoryViewModel {
         
         let firstPage = fetch(page: 1)
         let downloadedPage = firstPage
-            .flatMapLatest { firstPage -> Driver<AssistantHistoryPage> in
+            .flatMapLatest { firstPage -> Driver<AssistantRecentPage> in
                 didScrollToBottom
                     .compactMap { lastPage }
                     .filter { ($0.page.nextPage <= $0.page.total) && ($0.page.current != $0.page.total) }
-                    .flatMapFirst { lastPage -> Driver<AssistantHistoryPage> in
+                    .flatMapFirst { lastPage -> Driver<AssistantRecentPage> in
                         fetch(page: lastPage.page.nextPage)
                     }
                     .startWith(firstPage)
@@ -85,7 +85,7 @@ private extension HistoryViewModel {
     
     func makeRoute(
         didTapBack: Signal<Void>, 
-        didSelect: Signal<AssistantHistoryItem>
+        didSelect: Signal<HistoryAssistantResult>
     ) -> Driver<Route> {
         let back = didTapBack
             .map { Route.back }

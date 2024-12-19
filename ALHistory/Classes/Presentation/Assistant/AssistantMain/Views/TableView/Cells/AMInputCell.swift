@@ -8,18 +8,12 @@
 import UIKit
 
 final class AMInputCell: UITableViewCell {
-    var didTapSelectAdditionalData: (() -> Void)?
-    var didTapCalculator: (() -> Void)?
     var didTapCamera: (() -> Void)?
-    var didChangeWritingMode: ((WritingMode) -> Void)?
     var didTapDone: ((String) -> Void)?
     
     lazy var container = makeContainer()
-    lazy var writingModeView = makeWritingModeView()
     lazy var textView = makeTextView()
-    lazy var bottomView = makeBottomView()
-    
-    private lazy var textViewTopConstraint = NSLayoutConstraint()
+    lazy var cameraButton = makeCameraButton()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -33,28 +27,6 @@ final class AMInputCell: UITableViewCell {
     }
 }
 
-// MARK: Public
-extension AMInputCell {
-    func setup(assistant: AssistantsCollectionElement.Assistant) {
-        writingModeView.isHidden = assistant != .writing
-        bottomView.calculatorButton.isHidden = assistant != .math
-        
-        textViewTopConstraint.isActive = false
-        textViewTopConstraint.constant = assistant == .writing ? 75.scale : 16.scale
-        textViewTopConstraint.isActive = true
-        
-        layoutIfNeeded()
-    }
-    
-    func setup(writingMode: WritingMode) {
-        writingModeView.mode = writingMode
-    }
-    
-    func setup(additionalDataEntity: AMSelectEntityButton.Entity?) {
-        bottomView.selectEntityButton.entity = additionalDataEntity
-    }
-}
-
 // MARK: Private
 private extension AMInputCell {
     func initialize() {
@@ -62,27 +34,9 @@ private extension AMInputCell {
         contentView.backgroundColor = UIColor.clear
         selectionStyle = .none
         
-        bottomView.selectEntityButton.addTarget(self, action: #selector(selectAdditionalDataTapped), for: .touchUpInside)
-        bottomView.calculatorButton.addTarget(self, action: #selector(calculatorTapped), for: .touchUpInside)
-        bottomView.cameraButton.addTarget(self, action: #selector(cameraTapped), for: .touchUpInside)
-        
-        writingModeView.didChangeMode = { [weak self] mode in
-            self?.didChangeWritingMode?(mode)
-        }
-        
         textView.didTapDone = { [weak self] text in
             self?.didTapDone?(text)
         }
-    }
-    
-    @objc 
-    func selectAdditionalDataTapped() {
-        didTapSelectAdditionalData?()
-    }
-    
-    @objc
-    func calculatorTapped() {
-        didTapCalculator?()
     }
     
     @objc
@@ -103,25 +57,17 @@ private extension AMInputCell {
         ])
         
         NSLayoutConstraint.activate([
-            writingModeView.widthAnchor.constraint(equalToConstant: 172.scale),
-            writingModeView.heightAnchor.constraint(equalToConstant: 43.scale),
-            writingModeView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            writingModeView.topAnchor.constraint(equalTo: container.topAnchor, constant: 16.scale)
-        ])
-        
-        textViewTopConstraint = textView.topAnchor.constraint(equalTo: container.topAnchor, constant: 16.scale)
-        NSLayoutConstraint.activate([
             textView.leadingAnchor.constraint(equalTo: container.leadingAnchor),
             textView.trailingAnchor.constraint(equalTo: container.trailingAnchor),
-            textView.bottomAnchor.constraint(equalTo: bottomView.topAnchor, constant: -16.scale),
-            textViewTopConstraint
+            textView.bottomAnchor.constraint(equalTo: cameraButton.topAnchor, constant: -8.scale),
+            textView.topAnchor.constraint(equalTo: container.topAnchor, constant: 16.scale)
         ])
         
         NSLayoutConstraint.activate([
-            bottomView.leadingAnchor.constraint(equalTo: container.leadingAnchor),
-            bottomView.trailingAnchor.constraint(equalTo: container.trailingAnchor),
-            bottomView.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -16.scale),
-            bottomView.heightAnchor.constraint(equalToConstant: 31.scale)
+            cameraButton.widthAnchor.constraint(equalToConstant: 24.scale),
+            cameraButton.heightAnchor.constraint(equalToConstant: 24.scale),
+            cameraButton.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -24.scale),
+            cameraButton.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -24.scale)
         ])
     }
 }
@@ -139,13 +85,6 @@ private extension AMInputCell {
         return view
     }
     
-    func makeWritingModeView() -> AssistantCameraWritingModeView {
-        let view = AssistantCameraWritingModeView(style: .manual)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        container.addSubview(view)
-        return view
-    }
-    
     func makeTextView() -> AMTextView {
         let view = AMTextView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -153,9 +92,11 @@ private extension AMInputCell {
         return view
     }
     
-    func makeBottomView() -> AMInputBottomView {
-        let view = AMInputBottomView()
+    func makeCameraButton() -> TapAreaButton {
+        let view = TapAreaButton()
+        view.setImage(UIImage(named: "AssistantMain.Camera"), for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.addTarget(self, action: #selector(cameraTapped), for: .touchUpInside)
         container.addSubview(view)
         return view
     }

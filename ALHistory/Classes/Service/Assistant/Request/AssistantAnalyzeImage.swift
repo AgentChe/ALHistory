@@ -9,14 +9,10 @@ import UIKit
 import Alamofire
 
 final class AssistantAnalyzeImage {
-    enum AssistantType {
-        case math, physics, biology, chemistry
-    }
-    
     private lazy var sessionManager = SessionManager()
     
-    func upload(image: UIImage, assistantType: AssistantType, completion: ((AssistantAnalyzeImageResult?) -> Void)? = nil) {
-        let url = URL(string: GlobalDefinitions.domain + "/api/v1/assistant/\(assistantType.extensionPath)/analyze")
+    func upload(image: UIImage, completion: ((AssistantAnalyzeImageResult?) -> Void)? = nil) {
+        let url = URL(string: GlobalDefinitions.domain + "/api/v1/assistant/history/analyze")
         let jpeg = image.jpegData(compressionQuality: 0.5)
         let anonymousId = sessionManager.anonymousId.data(using: .utf8)
         let internalId = sessionManager.internalId.data(using: .utf8)
@@ -46,21 +42,5 @@ final class AssistantAnalyzeImage {
                 let result = AssistantAnalyzeImageResult.map(response: data)
                 completion?(result)
             }
-    }
-}
-
-// MARK: Additional
-private extension AssistantAnalyzeImage.AssistantType {
-    var extensionPath: String {
-        switch self {
-        case .math:
-            return "math"
-        case .physics:
-            return "physics"
-        case .biology:
-            return "biology"
-        case .chemistry:
-            return "chemistry"
-        }
     }
 }

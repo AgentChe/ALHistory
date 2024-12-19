@@ -1,20 +1,19 @@
 //
-//  AssistantTranslateRequest.swift
+//  AssistantRecentRequest.swift
 //  ScienceSolver
 //
-//  Created by Андрей Чернышев on 09.09.2024.
+//  Created by Андрей Чернышев on 12.09.2024.
 //
 
 import Alamofire
 
-struct AssistantTranslateRequest: APIRequestBody {
+struct AssistantRecentRequest: APIRequestBody {
     let anonymousId: String
     let internalId: String
-    let text: String
-    let languageCode: String
+    let page: Int
     
     var url: String {
-        GlobalDefinitions.domain + "/api/v1/assistant/language/translate"
+        GlobalDefinitions.domain + "/api/v1/assistant/history/history"
     }
     
     var method: HTTPMethod {
@@ -31,8 +30,7 @@ struct AssistantTranslateRequest: APIRequestBody {
         [
             "anonymous_id": anonymousId,
             "internal_id": internalId,
-            "text": text,
-            "lang": languageCode
+            "page": page
         ]
     }
 }

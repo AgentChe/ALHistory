@@ -12,17 +12,8 @@ import Mantis
 
 final class AssistantImageResizeViewController: UIViewController {
     struct Result {
-        enum Assistant {
-            case math(AssistantAnalyzeImageResult)
-            case physics(AssistantAnalyzeImageResult)
-            case biology(AssistantAnalyzeImageResult)
-            case chemistry(AssistantAnalyzeImageResult)
-            case writing(WritingStyle, AssistantAnalyzeImageResult)
-            case language(TranslateResult)
-        }
-        
         let croppedImage: UIImage
-        let assistant: Assistant
+        let analyzeImageResult: AssistantAnalyzeImageResult
     }
     
     var didResult: ((Result) -> Void)?
@@ -37,11 +28,9 @@ final class AssistantImageResizeViewController: UIViewController {
     private weak var cropVC: CropViewController?
     
     private lazy var didCroppedImageTrigger = PublishRelay<UIImage>()
-    private lazy var didSelectWritingStyleTrigger = PublishRelay<WritingStyle>()
-    private lazy var didSelectLanguageTrigger = PublishRelay<Language>()
     private lazy var tryAgainTrigger = PublishRelay<Void>()
     
-    private init(fromCamera: AssistantCameraViewController.Result) {
+    private init(fromCamera: UIImage) {
         viewModel = AssistantImageResizeViewModel(fromCamera: fromCamera)
         
         super.init(nibName: nil, bundle: nil)
@@ -62,9 +51,6 @@ final class AssistantImageResizeViewController: UIViewController {
             didTapCancel: mainView.cancelButton.rx.tap.asSignal(),
             didTapDone: mainView.doneButton.rx.tap.asSignal(),
             didCroppedImage: didCroppedImageTrigger.asSignal(),
-            didSelectWritingStyle: didSelectWritingStyleTrigger.asSignal(),
-            didSelectLanguage: didSelectLanguageTrigger.asSignal(),
-            didTapSelectAdditionalData: mainView.selectEntityButton.rx.tap.asSignal(),
             tryAgain: tryAgainTrigger.asSignal()
         ))
         
@@ -80,12 +66,6 @@ final class AssistantImageResizeViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        output.selectedAdditionalDataEntity
-            .drive(Binder(mainView.selectEntityButton) { base, entity in
-                base.entity = entity
-            })
-            .disposed(by: disposeBag)
-        
         rx.methodInvoked(#selector(UIViewController.viewDidLayoutSubviews))
             .withLatestFrom(output.originalImage)
             .take(1)
@@ -98,7 +78,7 @@ final class AssistantImageResizeViewController: UIViewController {
 
 // MARK: Public
 extension AssistantImageResizeViewController {
-    static func make(fromCamera: AssistantCameraViewController.Result) -> AssistantImageResizeViewController {
+    static func make(fromCamera: UIImage) -> AssistantImageResizeViewController {
         AssistantImageResizeViewController(fromCamera: fromCamera)
     }
 }
@@ -123,16 +103,6 @@ private extension AssistantImageResizeViewController {
         switch route {
         case .cancel:
             didCancel?()
-        case .selectWritingStyle(let mode, let style):
-            let vc = SWMViewController.make(mode: mode, style: style) { [weak self] result in
-                self?.didSelectWritingStyleTrigger.accept(result)
-            }
-            present(vc, animated: false)
-        case .selectLanguage(let language):
-            let vc = SLViewController.make(language: language) { [weak self] language in
-                self?.didSelectLanguageTrigger.accept(language)
-            }
-            present(vc, animated: false)
         }
     }
     

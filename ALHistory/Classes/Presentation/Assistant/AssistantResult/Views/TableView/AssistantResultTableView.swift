@@ -15,7 +15,7 @@ final class AssistantResultTableView: UITableView {
     private lazy var didTapLikeTrigger = PublishRelay<Void>()
     private lazy var didTapDislikeTrigger = PublishRelay<Void>()
     private lazy var didTapRefreshTrigger = PublishRelay<Void>()
-    private lazy var didTapCopyTrigger = PublishRelay<AssistantResultTableAnswerElement>()
+    private lazy var didTapCopyTrigger = PublishRelay<HistoryAssistantResult.Response>()
     
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -48,7 +48,7 @@ extension AssistantResultTableView {
         didTapRefreshTrigger.asSignal()
     }
     
-    var didTapCopy: Signal<AssistantResultTableAnswerElement> {
+    var didTapCopy: Signal<HistoryAssistantResult.Response> {
         didTapCopyTrigger.asSignal()
     }
 }

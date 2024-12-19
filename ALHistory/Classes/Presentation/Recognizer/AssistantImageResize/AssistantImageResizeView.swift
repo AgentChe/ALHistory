@@ -13,7 +13,6 @@ final class AssistantImageResizeView: UIView {
     lazy var doneButton = makeTextTapAreaButton(title: "AssistantImageResize.Done".localized)
     lazy var imageContainer = makeImageContainerView()
     lazy var animateView = makeAnimateView()
-    lazy var selectEntityButton = makeSelectEntityButton()
     
     private lazy var animateViewWidthConstraint = NSLayoutConstraint()
     private lazy var animateViewHeightConstraint = NSLayoutConstraint()
@@ -85,11 +84,6 @@ private extension AssistantImageResizeView {
             animateViewWidthConstraint,
             animateViewHeightConstraint,
         ])
-        
-        NSLayoutConstraint.activate([
-            selectEntityButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            selectEntityButton.topAnchor.constraint(equalTo: imageContainer.bottomAnchor, constant: 28.scale)
-        ])
     }
 }
 
@@ -118,13 +112,6 @@ private extension AssistantImageResizeView {
     
     func makeAnimateView() -> AIRAnimationView {
         let view = AIRAnimationView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(view)
-        return view
-    }
-    
-    func makeSelectEntityButton() -> AIRSelectEntityButton {
-        let view = AIRSelectEntityButton()
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

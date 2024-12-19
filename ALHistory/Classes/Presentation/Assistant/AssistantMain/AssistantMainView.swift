@@ -8,7 +8,6 @@
 import UIKit
 
 final class AssistantMainView: UIView {
-    lazy var assistantsCollectionView = makeAssistantsCollectionView()
     lazy var tableView = makeTableView()
     
     override init(frame: CGRect) {
@@ -34,16 +33,9 @@ private extension AssistantMainView {
 private extension AssistantMainView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            assistantsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            assistantsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            assistantsCollectionView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: ScreenSize.isIphoneXFamily ? 36.scale : 16.scale),
-            assistantsCollectionView.heightAnchor.constraint(equalToConstant: 31.scale)
-        ])
-        
-        NSLayoutConstraint.activate([
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            tableView.topAnchor.constraint(equalTo: assistantsCollectionView.bottomAnchor, constant: 8.scale),
+            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: keyboardLayoutGuide.topAnchor)
         ])
     }
@@ -51,23 +43,6 @@ private extension AssistantMainView {
 
 // MARK: Lazy initialization
 private extension AssistantMainView {
-    func makeAssistantsCollectionView() -> AssistantsCollectionView {
-        let layout = UICollectionViewFlowLayout()
-        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-        layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 12.scale
-        layout.minimumInteritemSpacing = 0
-        
-        let view = AssistantsCollectionView(frame: .zero, collectionViewLayout: layout)
-        view.backgroundColor = UIColor.clear
-        view.showsHorizontalScrollIndicator = false
-        view.contentInset = UIEdgeInsets(horizontal: 100.scale)
-        view.setContentOffset(CGPoint(x: -100.scale, y: 0), animated: false)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(view)
-        return view
-    }
-    
     func makeTableView() -> AssistantMainTableView {
         let view = AssistantMainTableView()
         view.backgroundColor = UIColor.clear

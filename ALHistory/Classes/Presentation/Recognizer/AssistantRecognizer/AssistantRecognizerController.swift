@@ -10,7 +10,7 @@ import RxSwift
 
 final class AssistantRecognizerController: UIViewController {
     struct Result {
-        let fromCamera: AssistantCameraViewController.Result
+        let fromCamera: UIImage // original
         let recognized: AssistantImageResizeViewController.Result
     }
     
@@ -30,11 +30,10 @@ final class AssistantRecognizerController: UIViewController {
     private let result: (Result) -> Void
     
     private init(
-        assistant: AssistantsCollectionElement.Assistant?, 
         close: @escaping () -> Void,
         result: @escaping (Result) -> Void
     ) {
-        self.cameraVC = AssistantCameraViewController.make(assistant: assistant)
+        self.cameraVC = AssistantCameraViewController.make()
         self.close = close
         self.result = result
         
@@ -88,11 +87,10 @@ final class AssistantRecognizerController: UIViewController {
 // MARK: Public
 extension AssistantRecognizerController {
     static func make(
-        assistant: AssistantsCollectionElement.Assistant? = nil,
         close: @escaping () -> Void,
         result: @escaping (AssistantRecognizerController.Result) -> Void
     ) -> AssistantRecognizerController {
-        let vc = AssistantRecognizerController(assistant: assistant, close: close, result: result)
+        let vc = AssistantRecognizerController(close: close, result: result)
         vc.modalPresentationStyle = .fullScreen
         return vc
     }
