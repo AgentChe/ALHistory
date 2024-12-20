@@ -7,6 +7,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'ALHistory' do
   pod 'Toast-Swift'
   pod 'lottie-ios'
+  pod 'RiveRuntime'
   pod 'Kingfisher'
   pod 'Mantis'
   

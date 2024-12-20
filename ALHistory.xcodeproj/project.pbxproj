@@ -160,9 +160,9 @@
 		DE8B12F12D14121B00A65F23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E72D14121B00A65F23 /* GoogleService-Info.plist */; };
 		DE8B12F22D14121B00A65F23 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E92D14121B00A65F23 /* Localizable.strings */; };
 		DE8B12F32D14121B00A65F23 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E22D14121B00A65F23 /* Inter-Medium.ttf */; };
-		DE8B12FD2D14203800A65F23 /* Onboarding.Welcome3.Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12FC2D14203800A65F23 /* Onboarding.Welcome3.Animation.json */; };
-		DE8B12FF2D14203800A65F23 /* Onboarding.Welcome2.Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12FB2D14203800A65F23 /* Onboarding.Welcome2.Animation.json */; };
-		DE8B13032D1426A300A65F23 /* Onboarding.Welcome1.Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DE8B13022D1426A300A65F23 /* Onboarding.Welcome1.Animation.json */; };
+		DE8B130D2D14634700A65F23 /* Onboarding.Welcome1.Animation.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8B130C2D14634700A65F23 /* Onboarding.Welcome1.Animation.riv */; };
+		DE8B13102D15711C00A65F23 /* Onboarding.Welcome2.Animation.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8B130E2D15711C00A65F23 /* Onboarding.Welcome2.Animation.riv */; };
+		DE8B13112D15711C00A65F23 /* Onboarding.Welcome3.Animation.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8B130F2D15711C00A65F23 /* Onboarding.Welcome3.Animation.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -323,9 +323,9 @@
 		DE8B12E42D14121B00A65F23 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		DE8B12E72D14121B00A65F23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE8B12E82D14121B00A65F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DE8B12FB2D14203800A65F23 /* Onboarding.Welcome2.Animation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Onboarding.Welcome2.Animation.json; sourceTree = "<group>"; };
-		DE8B12FC2D14203800A65F23 /* Onboarding.Welcome3.Animation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Onboarding.Welcome3.Animation.json; sourceTree = "<group>"; };
-		DE8B13022D1426A300A65F23 /* Onboarding.Welcome1.Animation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Onboarding.Welcome1.Animation.json; sourceTree = "<group>"; };
+		DE8B130C2D14634700A65F23 /* Onboarding.Welcome1.Animation.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.Welcome1.Animation.riv; sourceTree = "<group>"; };
+		DE8B130E2D15711C00A65F23 /* Onboarding.Welcome2.Animation.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.Welcome2.Animation.riv; sourceTree = "<group>"; };
+		DE8B130F2D15711C00A65F23 /* Onboarding.Welcome3.Animation.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.Welcome3.Animation.riv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -845,9 +845,9 @@
 		DE8B11D92D14120600A65F23 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DE8B13022D1426A300A65F23 /* Onboarding.Welcome1.Animation.json */,
-				DE8B12FB2D14203800A65F23 /* Onboarding.Welcome2.Animation.json */,
-				DE8B12FC2D14203800A65F23 /* Onboarding.Welcome3.Animation.json */,
+				DE8B130C2D14634700A65F23 /* Onboarding.Welcome1.Animation.riv */,
+				DE8B130E2D15711C00A65F23 /* Onboarding.Welcome2.Animation.riv */,
+				DE8B130F2D15711C00A65F23 /* Onboarding.Welcome3.Animation.riv */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -908,13 +908,6 @@
 			path = Paygate;
 			sourceTree = "<group>";
 		};
-		DE8B11F02D14120600A65F23 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		DE8B11F22D14120600A65F23 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -926,7 +919,6 @@
 		DE8B11F62D14120600A65F23 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				DE8B11F02D14120600A65F23 /* Source */,
 				DE8B11F22D14120600A65F23 /* Utils */,
 				DE8B11F32D14120600A65F23 /* SplashView.swift */,
 				DE8B11F42D14120600A65F23 /* SplashViewController.swift */,
@@ -1126,6 +1118,7 @@
 				DE8B11022D140F5500A65F23 /* Frameworks */,
 				DE8B11032D140F5500A65F23 /* Resources */,
 				38DDF3C0700BC1A19EF7B573 /* [CP] Embed Pods Frameworks */,
+				8C52F0B53DD5C4850DBFC6BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1160,8 +1153,6 @@
 				Base,
 			);
 			mainGroup = DE8B10FC2D140F5500A65F23;
-			packageReferences = (
-			);
 			productRefGroup = DE8B11062D140F5500A65F23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1179,18 +1170,18 @@
 				DE8B11272D140F6000A65F23 /* Assets.xcassets in Resources */,
 				DE8B122E2D14120600A65F23 /* ART.Loader.json in Resources */,
 				DE8B11292D140F6000A65F23 /* LaunchScreen.storyboard in Resources */,
+				DE8B13102D15711C00A65F23 /* Onboarding.Welcome2.Animation.riv in Resources */,
+				DE8B13112D15711C00A65F23 /* Onboarding.Welcome3.Animation.riv in Resources */,
 				DE8B12EB2D14121B00A65F23 /* FiraMath-Regular.otf in Resources */,
 				DE8B12EC2D14121B00A65F23 /* FiraMath-Regular.plist in Resources */,
 				DE8B12ED2D14121B00A65F23 /* Inter-Bold.ttf in Resources */,
 				DE8B12EE2D14121B00A65F23 /* Inter-Black.ttf in Resources */,
-				DE8B13032D1426A300A65F23 /* Onboarding.Welcome1.Animation.json in Resources */,
-				DE8B12FD2D14203800A65F23 /* Onboarding.Welcome3.Animation.json in Resources */,
-				DE8B12FF2D14203800A65F23 /* Onboarding.Welcome2.Animation.json in Resources */,
 				DE8B12EF2D14121B00A65F23 /* Inter-SemiBold.ttf in Resources */,
 				DE8B12F02D14121B00A65F23 /* Inter-Regular.ttf in Resources */,
 				DE8B12F12D14121B00A65F23 /* GoogleService-Info.plist in Resources */,
 				DE8B12F22D14121B00A65F23 /* Localizable.strings in Resources */,
 				DE8B12F32D14121B00A65F23 /* Inter-Medium.ttf in Resources */,
+				DE8B130D2D14634700A65F23 /* Onboarding.Welcome1.Animation.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1234,6 +1225,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ALHistory/Pods-ALHistory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C52F0B53DD5C4850DBFC6BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALHistory/Pods-ALHistory-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALHistory/Pods-ALHistory-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ALHistory/Pods-ALHistory-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
