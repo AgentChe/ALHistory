@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CAC8A972D1AD5320084A046 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC8A962D1AD5320084A046 /* GoogleService-Info.plist */; };
 		96BF069E61B79E47DF7AD534 /* Pods_ALHistory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0E7A83291EE7D777E57A23 /* Pods_ALHistory.framework */; };
 		DE8B11272D140F6000A65F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8B111E2D140F6000A65F23 /* Assets.xcassets */; };
 		DE8B11292D140F6000A65F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8B11212D140F6000A65F23 /* LaunchScreen.storyboard */; };
@@ -157,7 +158,6 @@
 		DE8B12EE2D14121B00A65F23 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E02D14121B00A65F23 /* Inter-Black.ttf */; };
 		DE8B12EF2D14121B00A65F23 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E42D14121B00A65F23 /* Inter-SemiBold.ttf */; };
 		DE8B12F02D14121B00A65F23 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E32D14121B00A65F23 /* Inter-Regular.ttf */; };
-		DE8B12F12D14121B00A65F23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E72D14121B00A65F23 /* GoogleService-Info.plist */; };
 		DE8B12F22D14121B00A65F23 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E92D14121B00A65F23 /* Localizable.strings */; };
 		DE8B12F32D14121B00A65F23 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE8B12E22D14121B00A65F23 /* Inter-Medium.ttf */; };
 		DE8B130D2D14634700A65F23 /* Onboarding.Welcome1.Animation.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8B130C2D14634700A65F23 /* Onboarding.Welcome1.Animation.riv */; };
@@ -166,10 +166,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CAC8A962D1AD5320084A046 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B0E7A83291EE7D777E57A23 /* Pods_ALHistory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALHistory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73228435683EDB6893BF9A35 /* Pods-ALHistory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALHistory.debug.xcconfig"; path = "Target Support Files/Pods-ALHistory/Pods-ALHistory.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2D4D90652092AD10630A14 /* Pods-ALHistory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALHistory.release.xcconfig"; path = "Target Support Files/Pods-ALHistory/Pods-ALHistory.release.xcconfig"; sourceTree = "<group>"; };
-		DE8B11052D140F5500A65F23 /* ALHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8B11052D140F5500A65F23 /* AI History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8B111E2D140F6000A65F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE8B111F2D140F6000A65F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE8B11202D140F6000A65F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -321,7 +322,6 @@
 		DE8B12E22D14121B00A65F23 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		DE8B12E32D14121B00A65F23 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		DE8B12E42D14121B00A65F23 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
-		DE8B12E72D14121B00A65F23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE8B12E82D14121B00A65F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DE8B130C2D14634700A65F23 /* Onboarding.Welcome1.Animation.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.Welcome1.Animation.riv; sourceTree = "<group>"; };
 		DE8B130E2D15711C00A65F23 /* Onboarding.Welcome2.Animation.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.Welcome2.Animation.riv; sourceTree = "<group>"; };
@@ -370,7 +370,7 @@
 		DE8B11062D140F5500A65F23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE8B11052D140F5500A65F23 /* ALHistory.app */,
+				DE8B11052D140F5500A65F23 /* AI History.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -391,7 +391,7 @@
 				DE8B12EA2D14121B00A65F23 /* Strings */,
 				DE8B111E2D140F6000A65F23 /* Assets.xcassets */,
 				DE8B111F2D140F6000A65F23 /* Info.plist */,
-				DE8B12E72D14121B00A65F23 /* GoogleService-Info.plist */,
+				3CAC8A962D1AD5320084A046 /* GoogleService-Info.plist */,
 				DE8B11212D140F6000A65F23 /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
@@ -1126,7 +1126,7 @@
 			);
 			name = ALHistory;
 			productName = ALHistory;
-			productReference = DE8B11052D140F5500A65F23 /* ALHistory.app */;
+			productReference = DE8B11052D140F5500A65F23 /* AI History.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1169,6 +1169,7 @@
 			files = (
 				DE8B11272D140F6000A65F23 /* Assets.xcassets in Resources */,
 				DE8B122E2D14120600A65F23 /* ART.Loader.json in Resources */,
+				3CAC8A972D1AD5320084A046 /* GoogleService-Info.plist in Resources */,
 				DE8B11292D140F6000A65F23 /* LaunchScreen.storyboard in Resources */,
 				DE8B13102D15711C00A65F23 /* Onboarding.Welcome2.Animation.riv in Resources */,
 				DE8B13112D15711C00A65F23 /* Onboarding.Welcome3.Animation.riv in Resources */,
@@ -1178,7 +1179,6 @@
 				DE8B12EE2D14121B00A65F23 /* Inter-Black.ttf in Resources */,
 				DE8B12EF2D14121B00A65F23 /* Inter-SemiBold.ttf in Resources */,
 				DE8B12F02D14121B00A65F23 /* Inter-Regular.ttf in Resources */,
-				DE8B12F12D14121B00A65F23 /* GoogleService-Info.plist in Resources */,
 				DE8B12F22D14121B00A65F23 /* Localizable.strings in Resources */,
 				DE8B12F32D14121B00A65F23 /* Inter-Medium.ttf in Resources */,
 				DE8B130D2D14634700A65F23 /* Onboarding.Welcome1.Animation.riv in Resources */,
@@ -1422,7 +1422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -1443,10 +1443,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.history;
+				PRODUCT_NAME = "AI History";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Science Solver Development";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "History AI AppStore";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1463,7 +1463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -1484,10 +1484,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.history;
+				PRODUCT_NAME = "AI History";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Science Solver Development";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "History AI AppStore";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

@@ -7,15 +7,14 @@
 
 import Foundation
 
-// TODO
 final class GlobalDefinitions {
     static let domain = "https://science.camplain-apps.com"
     static let apiKey = "zMvSnNSvO7NMJbdviV"
     
     static let otterScaleHost = "https://api.korrekted.com"
-    static let otterScaleApiKey = "6ShpjkA5kIKzBA48"
+    static let otterScaleApiKey = "VsO9yMQbHEc1WFHJ"
     
-    static let applicationTag = "SCIENCE_SOLVER"
+    static let applicationTag = "HISTORY_SOLVER"
     static let amplitudeApiKey = "d433d2c66723aeefd10c5b65f91c1fa3"
     
     static let termsOfServiceUrl = URL(string: "https://camplain-apps.com/terms-of-use.html")!
@@ -23,7 +22,7 @@ final class GlobalDefinitions {
     static let contactUsUrl = URL(string: "https://camplain-apps.com/contacts.html")!
     
     enum Paygate {
-        static let yearly = "science.yearly"
-        static let weekly = "science.weekly"
+        static let yearly = "app.iphone.science.history.yearly"
+        static let weekly = "app.iphone.science.history.weekly"
     }
 }

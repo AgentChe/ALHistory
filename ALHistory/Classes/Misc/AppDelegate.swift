@@ -13,7 +13,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         NumberLaunches().launch()
         
-        FacebookManager.shared.initialize(app: application, launchOptions: launchOptions)
         BranchManager.shared.initialize(launchOptions: launchOptions)
         AmplitudeManager.shared.initialize()
         FirebaseManager.shared.initialize()
@@ -31,7 +30,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        FacebookManager.shared.application(app, open: url, options: options)
         BranchManager.shared.application(app, open: url, options: options)
         
         return true
