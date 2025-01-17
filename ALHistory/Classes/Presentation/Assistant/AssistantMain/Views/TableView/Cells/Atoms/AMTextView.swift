@@ -13,12 +13,15 @@ final class AMTextView: UIView {
     lazy var textView = makeTextView()
     lazy var placeholderLabel = makePlaceholderLabel()
     
+    private lazy var doneButton = UIBarButtonItem(title: "Done".localized, style: .done, target: self, action: #selector(doneTapped))
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         makeConstraints()
         initialize()
         addToolBar()
+        textViewDidChange(textView)
     }
     
     required init?(coder: NSCoder) {
@@ -35,6 +38,11 @@ extension AMTextView: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
         placeholderLabel.isHidden = true
     }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        let isEmpty = textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        doneButton.isHidden = isEmpty
+    }
 }
 
 // MARK: Private
@@ -44,7 +52,6 @@ private extension AMTextView {
     }
     
     func addToolBar() {
-        let doneButton = UIBarButtonItem(title: "Done".localized, style: .done, target: self, action: #selector(doneTapped))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let cancelButton = UIBarButtonItem(title: "Cancel".localized, style: .done, target: self, action: #selector(cancelTapped))
         
