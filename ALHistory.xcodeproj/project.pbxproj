@@ -60,7 +60,6 @@
 		DE8B126A2D14120600A65F23 /* AMHistoryTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B116B2D14120600A65F23 /* AMHistoryTitleCell.swift */; };
 		DE8B126B2D14120600A65F23 /* AccountHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11912D14120600A65F23 /* AccountHistoryCell.swift */; };
 		DE8B126D2D14120600A65F23 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11462D14120600A65F23 /* UIDevice+Extension.swift */; };
-		DE8B126E2D14120600A65F23 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11312D14120600A65F23 /* FacebookManager.swift */; };
 		DE8B126F2D14120600A65F23 /* HistoryEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11A22D14120600A65F23 /* HistoryEmptyView.swift */; };
 		DE8B12702D14120600A65F23 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11A92D14120600A65F23 /* TabView.swift */; };
 		DE8B12712D14120600A65F23 /* Scalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B115C2D14120600A65F23 /* Scalable.swift */; };
@@ -174,7 +173,6 @@
 		DE8B111F2D140F6000A65F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE8B11202D140F6000A65F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE8B112F2D14120600A65F23 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
-		DE8B11312D14120600A65F23 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		DE8B11322D14120600A65F23 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DE8B11352D14120600A65F23 /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DE8B11362D14120600A65F23 /* RxActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
@@ -399,7 +397,6 @@
 			isa = PBXGroup;
 			children = (
 				DE8B112F2D14120600A65F23 /* AmplitudeManager.swift */,
-				DE8B11312D14120600A65F23 /* FacebookManager.swift */,
 				DE8B11322D14120600A65F23 /* FirebaseManager.swift */,
 			);
 			path = Analytics;
@@ -1296,7 +1293,6 @@
 				DE8B126A2D14120600A65F23 /* AMHistoryTitleCell.swift in Sources */,
 				DE8B126B2D14120600A65F23 /* AccountHistoryCell.swift in Sources */,
 				DE8B126D2D14120600A65F23 /* UIDevice+Extension.swift in Sources */,
-				DE8B126E2D14120600A65F23 /* FacebookManager.swift in Sources */,
 				DE8B126F2D14120600A65F23 /* HistoryEmptyView.swift in Sources */,
 				DE8B12702D14120600A65F23 /* TabView.swift in Sources */,
 				DE8B12712D14120600A65F23 /* Scalable.swift in Sources */,

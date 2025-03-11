@@ -1,12 +1,6 @@
 PODS:
   - Alamofire (5.10.2)
   - Amplitude-iOS (4.10.0)
-  - FBAEMKit (18.0.0):
-    - FBSDKCoreKit_Basics (= 18.0.0)
-  - FBSDKCoreKit (18.0.0):
-    - FBAEMKit (= 18.0.0)
-    - FBSDKCoreKit_Basics (= 18.0.0)
-  - FBSDKCoreKit_Basics (18.0.0)
   - Firebase/Analytics (11.9.0):
     - Firebase/Core
   - Firebase/Core (11.9.0):
@@ -128,7 +122,6 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Amplitude-iOS
-  - FBSDKCoreKit
   - Firebase/Analytics
   - Firebase/Messaging
   - Kingfisher
@@ -145,9 +138,6 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Amplitude-iOS
-    - FBAEMKit
-    - FBSDKCoreKit
-    - FBSDKCoreKit_Basics
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -181,9 +171,6 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   Amplitude-iOS: 7d8cdc3408ba35c2e68368fc7c692cd104606b94
-  FBAEMKit: e34530df538b8eb8aeb53c35867715ba6c63ef0c
-  FBSDKCoreKit: d3f479a69127acebb1c6aad91c1a33907bcf6c2f
-  FBSDKCoreKit_Basics: 017b6dc2a1862024815a8229e75661e627ac1e29
   Firebase: 819b973f669bc894c85e181f814171e9d4440b29
   FirebaseAnalytics: 68aa43d0556fb7ea3957570f65417813851fcf95
   FirebaseCore: 7cfcf7e8b33985c06478fd2b96e2f7101eb61a1c
@@ -206,6 +193,6 @@ SPEC CHECKSUMS:
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
   Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
 
-PODFILE CHECKSUM: 927aa1c56024ca4d8361fbb0e6e70a5e2d59460b
+PODFILE CHECKSUM: 16bd9feda4d5278f7bcad3655e3207c813fc0076
 
 COCOAPODS: 1.15.2
