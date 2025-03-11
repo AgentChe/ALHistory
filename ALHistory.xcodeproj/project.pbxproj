@@ -17,7 +17,6 @@
 		DE8B12312D14120600A65F23 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11F32D14120600A65F23 /* SplashView.swift */; };
 		DE8B12322D14120600A65F23 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B113B2D14120600A65F23 /* GradientView.swift */; };
 		DE8B12332D14120600A65F23 /* HistoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11A02D14120600A65F23 /* HistoryTableView.swift */; };
-		DE8B12342D14120600A65F23 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11302D14120600A65F23 /* BranchManager.swift */; };
 		DE8B12362D14120600A65F23 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11982D14120600A65F23 /* AccountView.swift */; };
 		DE8B12382D14120600A65F23 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B11472D14120600A65F23 /* UIEdgeInsets+Extension.swift */; };
 		DE8B12392D14120600A65F23 /* RestAPITransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8B114E2D14120600A65F23 /* RestAPITransport.swift */; };
@@ -175,7 +174,6 @@
 		DE8B111F2D140F6000A65F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE8B11202D140F6000A65F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE8B112F2D14120600A65F23 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
-		DE8B11302D14120600A65F23 /* BranchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
 		DE8B11312D14120600A65F23 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		DE8B11322D14120600A65F23 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DE8B11352D14120600A65F23 /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
@@ -401,7 +399,6 @@
 			isa = PBXGroup;
 			children = (
 				DE8B112F2D14120600A65F23 /* AmplitudeManager.swift */,
-				DE8B11302D14120600A65F23 /* BranchManager.swift */,
 				DE8B11312D14120600A65F23 /* FacebookManager.swift */,
 				DE8B11322D14120600A65F23 /* FirebaseManager.swift */,
 			);
@@ -1256,7 +1253,6 @@
 				DE8B12312D14120600A65F23 /* SplashView.swift in Sources */,
 				DE8B12322D14120600A65F23 /* GradientView.swift in Sources */,
 				DE8B12332D14120600A65F23 /* HistoryTableView.swift in Sources */,
-				DE8B12342D14120600A65F23 /* BranchManager.swift in Sources */,
 				DE8B12362D14120600A65F23 /* AccountView.swift in Sources */,
 				DE8B12382D14120600A65F23 /* UIEdgeInsets+Extension.swift in Sources */,
 				DE8B12392D14120600A65F23 /* RestAPITransport.swift in Sources */,
@@ -1424,7 +1420,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RXCT63549X;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1442,7 +1438,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.history;
 				PRODUCT_NAME = "AI History";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1465,7 +1461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RXCT63549X;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1483,7 +1479,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.history;
 				PRODUCT_NAME = "AI History";
 				PROVISIONING_PROFILE_SPECIFIER = "";
