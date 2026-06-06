@@ -20,7 +20,6 @@ target 'ALHistory' do
 
   pod 'OtterScaleiOS', :git => "https://github.com/AgentChe/OtterScaleiOS.git"
   
-  pod 'Amplitude-iOS'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
 end

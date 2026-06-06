@@ -41,7 +41,7 @@ extension AMTextView: UITextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
         let isEmpty = textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-        doneButton.isHidden = isEmpty
+        doneButton.isEnabled = !isEmpty
     }
 }
 
